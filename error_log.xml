@@ -1,0 +1,1049 @@
+<?xml version='1.0' ?>
+<error_log>
+<error><id>ERR_5e5688d169bcc</id><date>2020-02-26T15:03:45+00:00</date><number>0</number><message><![CDATA[Class 'UData\Exception' not found]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>40</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e568a16d1974</id><date>2020-02-26T15:09:10+00:00</date><number>0</number><message><![CDATA[test exception]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>40</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e568a278b125</id><date>2020-02-26T15:09:27+00:00</date><number>0</number><message><![CDATA[test exception]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>40</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e5693f955b0f</id><date>2020-02-26T15:51:21+00:00</date><number>0</number><message><![CDATA[Call to undefined method UData\Router::HandleEvent()]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>45</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(50): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e56b3620ae43</id><date>2020-02-26T18:05:22+00:00</date><number>0</number><message><![CDATA[Call to undefined method UData\Router::HandleEvent()]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>45</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(50): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e57c653b29e1</id><date>2020-02-27T13:38:27+00:00</date><number>0</number><message><![CDATA[Call to undefined method UData\Router::HandleEvent()]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>45</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(50): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e57d2f28ba45</id><date>2020-02-27T14:32:18+00:00</date><number>8</number><message><![CDATA[Undefined offset: 4]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\udata\url.php]]></file><line>84</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e57d30495b38</id><date>2020-02-27T14:32:36+00:00</date><number>8</number><message><![CDATA[Undefined offset: 4]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\udata\url.php]]></file><line>84</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e5d1afc62b2f</id><date>2020-03-02T14:41:00+00:00</date><number>0</number><message><![CDATA[Call to undefined method UData\UrlRouter::HanleEvent()]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>51</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(56): UData\Application::Main()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e5d1b19e1d5d</id><date>2020-03-02T14:41:29+00:00</date><number>0</number><message><![CDATA[Interface 'UData\SeekableIterator' not found]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\interfaces\udata\arguments.php]]></file><line>19</line><trace><![CDATA[#0 [internal function]: unknown()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\classes\autoloader.php(69): spl_autoload('udata\\arguments')
+#2 [internal function]: Autoloader-&gt;load('UData\\Arguments')
+#3 C:\Users\chica\Documents\Development\Web\UData4.5\classes\udata\eventargs.php(19): spl_autoload_call('UData\\Arguments')
+#4 [internal function]: unknown()
+#5 C:\Users\chica\Documents\Development\Web\UData4.5\classes\autoloader.php(69): spl_autoload('udata\\eventargs')
+#6 [internal function]: Autoloader-&gt;load('UData\\EventArgs')
+#7 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(51): spl_autoload_call('UData\\EventArgs')
+#8 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(56): UData\Application::Main()
+#9 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#10 {main}]]></trace></error>
+<error><id>ERR_5e5d1c1cc4fe4</id><date>2020-03-02T14:45:48+00:00</date><number>0</number><message><![CDATA[Call to a member function ToString() on null]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\udata\urlrouter.php]]></file><line>25</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(51): UData\UrlRouter::HandleEvent(Object(UData\EventArgs))
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(56): UData\Application::Main()
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#3 {main}]]></trace></error>
+<error><id>ERR_5e5ff96d99cf3</id><date>2020-03-04T18:54:37+00:00</date><number>0</number><message><![CDATA[syntax error, unexpected '}', expecting end of file]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\widgetoptions.php]]></file><line>84</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\classes\autoloader.php(69): spl_autoload('udata\\widgetopt...')
+#1 [internal function]: Autoloader-&gt;load('UData\\WidgetOpt...')
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php(22): spl_autoload_call('UData\\WidgetOpt...')
+#3 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(35): UData\StartUI-&gt;__construct()
+#4 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#5 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#6 {main}]]></trace></error>
+<error><id>ERR_5e5ffad00b94a</id><date>2020-03-04T19:00:32+00:00</date><number>8</number><message><![CDATA[Undefined variable: object]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\widgetcontainer.php]]></file><line>27</line><trace><![CDATA[Array
+(
+    [objects] =&gt; Array
+        (
+            [0] =&gt; UData\StringUI Object
+                (
+                    [out:UData\StringUI:private] =&gt; 
+                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                        (
+                            [data:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [string] =&gt; This is the first string.
+                                )
+
+                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [0] =&gt; string
+                                )
+
+                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                        )
+
+                )
+
+            [1] =&gt; UData\LineBreak Object
+                (
+                    [out:UData\LineBreak:private] =&gt; 
+                    [opts:UData\LineBreak:private] =&gt; 
+                    [opt] =&gt; UData\WidgetOptions Object
+                        (
+                            [data:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [count] =&gt; 4
+                                )
+
+                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [0] =&gt; count
+                                )
+
+                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                        )
+
+                )
+
+            [2] =&gt; UData\StringUI Object
+                (
+                    [out:UData\StringUI:private] =&gt; 
+                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                        (
+                            [data:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [string] =&gt; This second string has a yellow backgournd with red text.
+                                    [0] =&gt; background-color:yellow;color:red
+                                )
+
+                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [0] =&gt; string
+                                    [1] =&gt; 0
+                                )
+
+                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                        )
+
+                )
+
+            [3] =&gt; UData\LineBreak Object
+                (
+                    [out:UData\LineBreak:private] =&gt; 
+                    [opts:UData\LineBreak:private] =&gt; 
+                )
+
+            [4] =&gt; UData\StringUI Object
+                (
+                    [out:UData\StringUI:private] =&gt; 
+                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                        (
+                            [data:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [0] =&gt; This is the third string, and is blue.
+                                    [1] =&gt; color:blue
+                                )
+
+                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                (
+                                    [0] =&gt; 0
+                                    [1] =&gt; 1
+                                )
+
+                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                        )
+
+                )
+
+        )
+
+)
+]]></trace></error>
+<error><id>ERR_5e5ffaff35bd0</id><date>2020-03-04T19:01:19+00:00</date><number>8</number><message><![CDATA[Undefined property: UData\StringUI::$opt]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\stringui.php]]></file><line>38</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e60041484e18</id><date>2020-03-04T19:40:04+00:00</date><number>0</number><message><![CDATA[Argument 1 passed to UData\StringUI::__construct() must be an instance of UData\WidgetOptions or null, string given, called in C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php on line 22]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\stringui.php]]></file><line>23</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php(22): UData\StringUI-&gt;__construct('This string wid...')
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(35): UData\StartUI-&gt;__construct()
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#3 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#4 {main}]]></trace></error>
+<error><id>ERR_5e600d27a9983</id><date>2020-03-04T20:18:47+00:00</date><number>8</number><message><![CDATA[Undefined variable: item]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\icontainer.php]]></file><line>30</line><trace><![CDATA[Array
+(
+    [items] =&gt; Array
+        (
+            [0] =&gt; UData\WidgetContainer Object
+                (
+                    [data:UData\WidgetContainer:private] =&gt; Array
+                        (
+                            [0] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This string is red.
+                                                    [style] =&gt; color:red
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                    [1] =&gt; style
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [1] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [count] =&gt; 4
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; count
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [2] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This is the second string
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [3] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [4] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; Yet another string
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                        )
+
+                    [pointer:UData\WidgetContainer:private] =&gt; 0
+                )
+
+            [1] =&gt; UData\WidgetContainer Object
+                (
+                    [data:UData\WidgetContainer:private] =&gt; Array
+                        (
+                            [0] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [1] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This string is in the second container
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [2] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [3] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; Second container string with red background
+                                                    [style] =&gt; background-color:red
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                    [1] =&gt; style
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                        )
+
+                    [pointer:UData\WidgetContainer:private] =&gt; 0
+                )
+
+        )
+
+    [i] =&gt; UData\WidgetContainer Object
+        (
+            [data:UData\WidgetContainer:private] =&gt; Array
+                (
+                    [0] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; 
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This string is red.
+                                            [style] =&gt; color:red
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                            [1] =&gt; style
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [1] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [count] =&gt; 4
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; count
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [2] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; 
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This is the second string
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [3] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [4] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; 
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; Yet another string
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                )
+
+            [pointer:UData\WidgetContainer:private] =&gt; 0
+        )
+
+)
+]]></trace></error>
+<error><id>ERR_5e600d7801bb9</id><date>2020-03-04T20:20:08+00:00</date><number>0</number><message><![CDATA[Object of class UData\IContainer could not be converted to string]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\icontainer.php]]></file><line>36</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\icontainer.php(30): UData\IContainer-&gt;Add(Object(UData\WidgetContainer))
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php(35): UData\IContainer-&gt;__construct(Array)
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(35): UData\StartUI-&gt;__construct()
+#3 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#4 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#5 {main}]]></trace></error>
+<error><id>ERR_5e600fdec7557</id><date>2020-03-04T20:30:22+00:00</date><number>0</number><message><![CDATA[Class 'UData\IContainer' not found]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php]]></file><line>35</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(35): UData\StartUI-&gt;__construct()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#3 {main}]]></trace></error>
+<error><id>ERR_5e600ff1099c5</id><date>2020-03-04T20:30:41+00:00</date><number>0</number><message><![CDATA[Class 'UData\IOContainer' not found]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php]]></file><line>35</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(35): UData\StartUI-&gt;__construct()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#2 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#3 {main}]]></trace></error>
+<error><id>ERR_5e600fff256db</id><date>2020-03-04T20:30:55+00:00</date><number>8</number><message><![CDATA[Undefined variable: tiems]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\base\udata\iocontainer.php]]></file><line>27</line><trace><![CDATA[Array
+(
+    [items] =&gt; Array
+        (
+            [0] =&gt; UData\WidgetContainer Object
+                (
+                    [data:UData\WidgetContainer:private] =&gt; Array
+                        (
+                            [0] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This string is red.
+                                                    [style] =&gt; color:red
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                    [1] =&gt; style
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [1] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [count] =&gt; 4
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; count
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [2] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This is the second string
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [3] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [4] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; Yet another string
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                        )
+
+                    [pointer:UData\WidgetContainer:private] =&gt; 0
+                )
+
+            [1] =&gt; UData\WidgetContainer Object
+                (
+                    [data:UData\WidgetContainer:private] =&gt; Array
+                        (
+                            [0] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [1] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; This string is in the second container
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                            [2] =&gt; UData\LineBreak Object
+                                (
+                                    [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                    [opts:UData\LineBreak:private] =&gt; 
+                                )
+
+                            [3] =&gt; UData\StringUI Object
+                                (
+                                    [out:UData\StringUI:private] =&gt; 
+                                    [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                        (
+                                            [data:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [string] =&gt; Second container string with red background
+                                                    [style] =&gt; background-color:red
+                                                )
+
+                                            [keys:UData\WidgetOptions:private] =&gt; Array
+                                                (
+                                                    [0] =&gt; string
+                                                    [1] =&gt; style
+                                                )
+
+                                            [pointer:UData\WidgetOptions:private] =&gt; 0
+                                        )
+
+                                )
+
+                        )
+
+                    [pointer:UData\WidgetContainer:private] =&gt; 0
+                )
+
+        )
+
+)
+]]></trace></error>
+<error><id>ERR_5e61175dea865</id><date>2020-03-05T15:14:37+00:00</date><number>8</number><message><![CDATA[Trying to get property 'url' of non-object]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\image.php]]></file><line>46</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e61176c24e98</id><date>2020-03-05T15:14:52+00:00</date><number>8</number><message><![CDATA[Trying to get property 'url' of non-object]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\image.php]]></file><line>46</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e6117d437c02</id><date>2020-03-05T15:16:36+00:00</date><number>8</number><message><![CDATA[Trying to get property 'url' of non-object]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\image.php]]></file><line>46</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e6117da05d15</id><date>2020-03-05T15:16:42+00:00</date><number>8</number><message><![CDATA[Trying to get property 'url' of non-object]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\classes\webui\udata\image.php]]></file><line>46</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e611bac2fd77</id><date>2020-03-05T15:33:00+00:00</date><number>2</number><message><![CDATA[Use of undefined constant WidgetOptions - assumed 'WidgetOptions' (this will throw an Error in a future version of PHP)]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\startui.php]]></file><line>42</line><trace><![CDATA[Array
+(
+    [a] =&gt; UData\WidgetContainer Object
+        (
+            [data:UData\WidgetContainer:private] =&gt; Array
+                (
+                    [0] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; &lt;span style='color:red'&gt;This string is red.&lt;/span&gt;
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This string is red.
+                                            [style] =&gt; color:red
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                            [1] =&gt; style
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [1] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [count] =&gt; 4
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; count
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [2] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; This is the second string
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This is the second string
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [3] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [4] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; Yet another string
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; Yet another string
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                )
+
+            [pointer:UData\WidgetContainer:private] =&gt; 5
+        )
+
+    [b] =&gt; UData\WidgetContainer Object
+        (
+            [data:UData\WidgetContainer:private] =&gt; Array
+                (
+                    [0] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [1] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; This string is in the second container
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This string is in the second container
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [2] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [3] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; &lt;span style='background-color:red'&gt;Second container string with red background&lt;/span&gt;
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; Second container string with red background
+                                            [style] =&gt; background-color:red
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                            [1] =&gt; style
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                )
+
+            [pointer:UData\WidgetContainer:private] =&gt; 4
+        )
+
+    [i] =&gt; UData\IOContainer Object
+        (
+            [data:UData\IOContainer:private] =&gt; Array
+                (
+                    [0] =&gt; UData\WidgetContainer Object
+                        (
+                            [data:UData\WidgetContainer:private] =&gt; Array
+                                (
+                                    [0] =&gt; UData\StringUI Object
+                                        (
+                                            [out:UData\StringUI:private] =&gt; &lt;span style='color:red'&gt;This string is red.&lt;/span&gt;
+                                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [string] =&gt; This string is red.
+                                                            [style] =&gt; color:red
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; string
+                                                            [1] =&gt; style
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                    [1] =&gt; UData\LineBreak Object
+                                        (
+                                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+                                            [opts:UData\LineBreak:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [count] =&gt; 4
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; count
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                    [2] =&gt; UData\StringUI Object
+                                        (
+                                            [out:UData\StringUI:private] =&gt; This is the second string
+                                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [string] =&gt; This is the second string
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; string
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                    [3] =&gt; UData\LineBreak Object
+                                        (
+                                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                            [opts:UData\LineBreak:private] =&gt; 
+                                        )
+
+                                    [4] =&gt; UData\StringUI Object
+                                        (
+                                            [out:UData\StringUI:private] =&gt; Yet another string
+                                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [string] =&gt; Yet another string
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; string
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                )
+
+                            [pointer:UData\WidgetContainer:private] =&gt; 5
+                        )
+
+                    [1] =&gt; UData\WidgetContainer Object
+                        (
+                            [data:UData\WidgetContainer:private] =&gt; Array
+                                (
+                                    [0] =&gt; UData\LineBreak Object
+                                        (
+                                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                            [opts:UData\LineBreak:private] =&gt; 
+                                        )
+
+                                    [1] =&gt; UData\StringUI Object
+                                        (
+                                            [out:UData\StringUI:private] =&gt; This string is in the second container
+                                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [string] =&gt; This string is in the second container
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; string
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                    [2] =&gt; UData\LineBreak Object
+                                        (
+                                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                                            [opts:UData\LineBreak:private] =&gt; 
+                                        )
+
+                                    [3] =&gt; UData\StringUI Object
+                                        (
+                                            [out:UData\StringUI:private] =&gt; &lt;span style='background-color:red'&gt;Second container string with red background&lt;/span&gt;
+                                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                                (
+                                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [string] =&gt; Second container string with red background
+                                                            [style] =&gt; background-color:red
+                                                        )
+
+                                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                                        (
+                                                            [0] =&gt; string
+                                                            [1] =&gt; style
+                                                        )
+
+                                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                                )
+
+                                        )
+
+                                )
+
+                            [pointer:UData\WidgetContainer:private] =&gt; 4
+                        )
+
+                )
+
+            [pointer:UData\IOContainer:private] =&gt; 2
+            [keys] =&gt; Array
+                (
+                )
+
+        )
+
+    [o] =&gt; UData\WidgetContainer Object
+        (
+            [data:UData\WidgetContainer:private] =&gt; Array
+                (
+                    [0] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [1] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; This string is in the second container
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; This string is in the second container
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                    [2] =&gt; UData\LineBreak Object
+                        (
+                            [out:UData\LineBreak:private] =&gt; &lt;br /&gt;
+                            [opts:UData\LineBreak:private] =&gt; 
+                        )
+
+                    [3] =&gt; UData\StringUI Object
+                        (
+                            [out:UData\StringUI:private] =&gt; &lt;span style='background-color:red'&gt;Second container string with red background&lt;/span&gt;
+                            [opts:UData\StringUI:private] =&gt; UData\WidgetOptions Object
+                                (
+                                    [data:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [string] =&gt; Second container string with red background
+                                            [style] =&gt; background-color:red
+                                        )
+
+                                    [keys:UData\WidgetOptions:private] =&gt; Array
+                                        (
+                                            [0] =&gt; string
+                                            [1] =&gt; style
+                                        )
+
+                                    [pointer:UData\WidgetOptions:private] =&gt; 0
+                                )
+
+                        )
+
+                )
+
+            [pointer:UData\WidgetContainer:private] =&gt; 4
+        )
+
+    [opts] =&gt; UData\WidgetOptions Object
+        (
+            [data:UData\WidgetOptions:private] =&gt; Array
+                (
+                )
+
+            [keys:UData\WidgetOptions:private] =&gt; Array
+                (
+                )
+
+            [pointer:UData\WidgetOptions:private] =&gt; 0
+        )
+
+)
+]]></trace></error>
+<error><id>ERR_5e611cc46bd9b</id><date>2020-03-05T15:37:40+00:00</date><number>0</number><message><![CDATA[Class 'images' not found]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\application.php]]></file><line>37</line><trace><![CDATA[#0 C:\Users\chica\Documents\Development\Web\UData4.5\application.php(45): UData\Application-&gt;__construct()
+#1 C:\Users\chica\Documents\Development\Web\UData4.5\index.html(1): include('C:\\Users\\chica\\...')
+#2 {main}]]></trace></error>
+<error><id>ERR_5e611ec022291</id><date>2020-03-05T15:46:08+00:00</date><number>2</number><message><![CDATA[filesize(): stat failed for /img/apex.jpg]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\images.php]]></file><line>41</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+<error><id>ERR_5e611f5721405</id><date>2020-03-05T15:48:39+00:00</date><number>8</number><message><![CDATA[Undefined property: UData\Images::$dispostion]]></message><file><![CDATA[C:\Users\chica\Documents\Development\Web\UData4.5\web\udata\images.php]]></file><line>49</line><trace><![CDATA[Array
+(
+)
+]]></trace></error>
+</error_log>

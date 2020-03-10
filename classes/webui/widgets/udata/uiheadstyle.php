@@ -16,7 +16,28 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    interface WebAPI {
-        public function __construct();
+    class UIHeadStyle implements Widget {
+        private $out;
+        private $opts;
+
+        public function __construct (WidgetOptions $opts = null) {
+            if (!is_null($opts)) $this->SetOptions($opts);
+            $this->out = "";
+        }
+
+        public function SetOptions (WidgetOptions $opts) {
+            $this->opts = $opts;
+        }
+
+        public function Display () {
+            echo $this->ToString();
+        }
+
+        public function ToString () {
+            $this->out .= "<style>";
+            $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
+            $this->out .= "</style>";
+            return $this->out;
+        }
     }
 }

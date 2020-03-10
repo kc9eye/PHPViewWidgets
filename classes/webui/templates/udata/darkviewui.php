@@ -16,7 +16,20 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    interface WebAPI {
-        public function __construct();
+    class DarkViewUI extends WebUITemplate {
+        public function __construct () {
+            parent::__construct();
+            $style = new WidgetOptions([
+                'string'=>
+                "#center{
+                    height:90vh;
+                }
+                #top,#foot{
+                    background-color:#3d3b3b;
+                    color:#f5f5f5;
+                }"
+            ]);
+            $this->Head->Add(new UIHeadStyle($style));
+        }
     }
 }

@@ -18,13 +18,13 @@
 namespace UData {
     class StartUI implements Controller {
         public function __construct () {
-            $view = new WebUITemplate();
-
-            $view->Head->Add(new UITitle(new WidgetOptions(['string'=>"Test Title"])));
+            $view = new DarkViewUI();
+            $view->Head->Add(new UITitle(new WidgetOptions(['string'=>"Dark View Template"])));
             $view->Top->Add(new UIHeading(new WidgetOptions(['string'=>"Top Heading"])));
-            $tm = new UIDivision(new WidgetOptions(['class'=>"mx-auto"]));
-            $tm->Add(new UIString(new WidgetOptions(['string'=>"This string is centered in the footer."])));
-            $view->Foot->Add($tm);
+
+            $footer = new UIDivision(new WidgetOptions(['class'=>"mx-auto"]));
+            $footer->Add(new UIString(new WidgetOptions(['string'=>"This text is centered."])));
+            $view->Foot->Add($footer);
             $view->Display();
         }
     }

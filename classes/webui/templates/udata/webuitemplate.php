@@ -34,26 +34,26 @@ namespace UData {
                 new UIString(new WidgetOptions(['string'=>"<meta charset='utf-8' />"])),
                 new UIString(new WidgetOptions(['string'=>"<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>"])),
                 new UIString(new WidgetOptions(['string'=>"<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>"])),
-                new UIString(New WidgetOptions(['string'=>"<script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>"])),
-                new UIString(new WidgetOptions(['string'=>"<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>"])),
-                new UIString(new WidgetOptions(['string'=>"<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>"]))
+                new UIScript(New WidgetOptions(['src'=>"https://code.jquery.com/jquery-3.4.1.slim.min.js",'other'=>"integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'"])),
+                new UIScript(new WidgetOptions(['src'=>"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",'other'=>"integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'"])),
+                new UIScript(new WidgetOptions(['src'=>"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",'other'=>"integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'"]))
             ]));
-            $this->Top = new UIDivision(new WidgetOptions(['class'=>"row"]));
+            $this->Top = new UIDivision(new WidgetOptions(['class'=>"row",'id'=>"top"]));
             
-            $this->Left = new UIDivision(new WidgetOptions(['class'=>"col"]));
-            $this->Center = new UIDivision(new WidgetOptions(['class'=>"col"]));
-            $this->Right = new UIDivision(new WidgetOptions(['class'=>"col"]));
+            $this->Left = new UIDivision(new WidgetOptions(['class'=>"col",'id'=>"left"]));
+            $this->Center = new UIDivision(new WidgetOptions(['class'=>"col",'id'=>"center"]));
+            $this->Right = new UIDivision(new WidgetOptions(['class'=>"col",'id'=>"right"]));
 
-            $this->Middle = new UIDivision(new WidgetOptions(['class'=>"row"]));
+            $this->Middle = new UIDivision(new WidgetOptions(['class'=>"row",'id'=>'middle']));
             $this->Middle->Add(new WidgetContainer([
                 $this->Left,
                 $this->Center,
                 $this->Right
             ]));
 
-            $this->Foot = new UIDivision(new WidgetOptions(['class'=>"row"]));
+            $this->Foot = new UIDivision(new WidgetOptions(['class'=>"row",'id'=>"foot"]));
 
-            $this->Container = new UIDivision(new WidgetOptions(['class'=>"container-fluid"]));
+            $this->Container = new UIDivision(new WidgetOptions(['class'=>"container-fluid",'id'=>"container"]));
             $this->Container->Add(new WidgetContainer([
                 $this->Top,
                 $this->Middle,

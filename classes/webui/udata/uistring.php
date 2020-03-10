@@ -16,8 +16,28 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    interface Container {
-        public function Add($object);
-        public function Count();
+    class UIString implements Widget {
+        private $out;
+        private $opts;
+
+        public function __construct (WidgetOptions $opts = null) {
+            if (!is_null($opts)) $this->SetOptions($opts);
+            $this->out = "";
+        }
+
+        public function SetOptions (WidgetOptions $opts) {
+            $this->opts = $opts;
+        }
+
+        public function Display () {
+            echo $this->ToString();
+        }
+
+        public function ToString () {
+            if (isset($this->opts->style)) $this->out .= "<span style='{$this->opts->style}'>";
+            $this->out .= $this->opts->string;
+            if (isset($this->opts->style)) $this->out .= "</span>";
+            return $this->out." ";
+        }
     }
 }

@@ -16,8 +16,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    interface Container {
-        public function Add($object);
-        public function Count();
+    interface WebAPI {
+        public function ToString();
     }
 }

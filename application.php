@@ -1,4 +1,13 @@
 <?php
+/**
+ * Main soruce point for the application
+ * 
+ * This file is the only file directly called by the web server.
+ * All other elements are directly instantiated by this file.
+ * UData4.5 is copyrighted under the GPL version 2 of the license.
+ * None of this application is under warranty, expressed or derived
+ * for any purpose.
+*/
 /*
  * Copyright (C) 2020  Paul W. Lane <kc9eye@gmail.com>
  *
@@ -16,7 +25,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    session_name('UDID');
+    session_name('UDATA');
     session_start();
     ob_start(null,0,PHP_OUTPUT_HANDLER_STDFLAGS^PHP_OUTPUT_HANDLER_REMOVABLE);
 
@@ -24,11 +33,22 @@ namespace UData {
     new \Autoloader(__DIR__,['.php','.int.php','.obj.php']);
     new \Errorhandler('error_log.xml','https://github.com/kc9eye/udata4.5.git/issues');
 
+    /**
+     * The application class instantiated at run time.
+     * 
+     * All other elements are instantiated by this class
+     * @version 1.0
+     * @author Paul W. Lane
+     */
     class Application {
+        /**@var Configuration object - All Cofiguration class methods available */
         public static $AppConfig;
 
         public function __construct () {
-            self::$AppConfig = new Configuration(['AppDir'=>__DIR__]);
+            self::$AppConfig = new Configuration([
+                'AppDir'=>__DIR__,
+                'Version'=>4.5
+                ]);
 
             try {
                 if (!isset($_REQUEST['i'])) 

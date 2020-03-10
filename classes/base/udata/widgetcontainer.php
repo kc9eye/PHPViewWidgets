@@ -16,7 +16,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    class WidgetContainer implements Container,Options,Widget {
+    class WidgetContainer implements WebElement, Options {
         private $data;
         private $pointer;
 
@@ -36,8 +36,24 @@ namespace UData {
             array_push($this->data,$object);
         }
 
+        public function Insert (Widget $object, $position) {
+            if ($position >= count($this->data)) throw new Exception("Position can not be greater than container size.");
+            $front = array();
+            $back = array();
+            for($cnt=0;$cnt<$position;$cnt++) array_push($front,$this->data[$cnt]);
+            for($cnt=$position;$cnt<count($this->data);$cnt++) array_push($back,$this->data[$cnt]);
+            $this->data = array();
+            foreach($front as $w) $this->Add($w);
+            $this->Add($object);
+            foreach($back as $w) $this->Add($w);
+        }
+
+        public function Count () {
+            return count($this->data);
+        }
+
         public function SetOptions (WidgetOptions $opts) {
-            //There are currently no options for WidgetContainers
+            trigger_error("Widget container does not currently implement any options, options should be set on the widget themselves.",E_USER_NOTICE);
         }
 
         public function Display () {

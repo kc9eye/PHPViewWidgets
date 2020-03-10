@@ -16,13 +16,15 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
-    class StringUI implements Widget {
+    class HTMLHead implements WebElement {
+        private $data;
         private $out;
         private $opts;
 
         public function __construct (WidgetOptions $opts = null) {
             if (!is_null($opts)) $this->SetOptions($opts);
             $this->out = "";
+            $this->data = new WidgetContainer();
         }
 
         public function SetOptions (WidgetOptions $opts) {
@@ -33,11 +35,31 @@ namespace UData {
             echo $this->ToString();
         }
 
+        public function Add ($object) {
+            $this->data->Add($object);
+        }
+
+        public function Insert (Widget $object, $position) {
+            if ($position >= count($this->data)) throw new Exception("Position can not be greater than container size.");
+            $front = array();
+            $back = array();
+            for($cnt=0;$cnt<$position;$cnt++) array_push($front,$this->data[$cnt]);
+            for($cnt=$position;$cnt<count($this->data);$cnt++) array_push($back,$this->data[$cnt]);
+            $this->data = array();
+            foreach($front as $w) $this->Add($w);
+            $this->Add($object);
+            foreach($back as $w) $this->Add($w);
+        }
+
+        public function Count () {
+            return $this->data->Count();
+        }
+
         public function ToString () {
-            if (isset($this->opts->style)) $this->out .= "<span style='{$this->opts->style}'>";
-            $this->out .= $this->opts->string;
-            if (isset($this->opts->style)) $this->out .= "</span>";
-            return $this->out." ";
+            $this->out .= "<!DOCTYPE html><html><head>";
+            $this->out .= $this->data->ToString();
+            $this->out .= "</head>";
+            return $this->out;
         }
     }
 }

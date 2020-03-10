@@ -42,6 +42,10 @@ namespace UData {
             return $out;
         }
 
+        public function Count () {
+            return count($this->data);
+        }
+
         public function seek ($p) {
             if ($p >= count($this->data)) throw new Exception("Key out of bounds");
             $this->pointer = $p;

@@ -18,25 +18,14 @@
 namespace UData {
     class StartUI implements Controller {
         public function __construct () {
-            $a = new WidgetContainer([
-                new StringUI(new WidgetOptions(['string'=>"This string is red.",'style'=>"color:red"])),
-                new LineBreak(new WidgetOptions(['count'=>4])),
-                new StringUI(new WidgetOptions(['string'=>"This is the second string"])),
-                new LineBreak(),
-                new StringUI(new WidgetOptions(['string'=>"Yet another string"]))
-            ]);
-            $b = new WidgetContainer([
-                new LineBreak(),
-                new StringUI(new WidgetOptions(['string'=>"This string is in the second container"])),
-                new LineBreak(),
-                new StringUI(new WidgetOptions(['string'=>"Second container string with red background",'style'=>"background-color:red"])),
-                new Image(new WidgetOptions(['url'=>new Url('?i=udata\images&src=/img/apex.jpg')]))
-            ]);
+            $view = new WebUITemplate();
 
-            $i = new IOContainer([$a,$b]);
-            foreach($i as $o)
-                $o->Display();
-            
+            $view->Head->Add(new UITitle(new WidgetOptions(['string'=>"Test Title"])));
+            $view->Top->Add(new UIHeading(new WidgetOptions(['string'=>"Top Heading"])));
+            $tm = new UIDivision(new WidgetOptions(['class'=>"mx-auto"]));
+            $tm->Add(new UIString(new WidgetOptions(['string'=>"This string is centered in the footer."])));
+            $view->Foot->Add($tm);
+            $view->Display();
         }
     }
 }

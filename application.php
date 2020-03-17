@@ -52,12 +52,12 @@ namespace UData {
 
             try {
                 if (!isset($_REQUEST['i'])) 
-                    new StartUI();
+                    new Views\StartUI();
                 else
                     new $_REQUEST['i']();
             }
             catch (Exception $e) {
-                new FourOFour();
+                die("404 View/API not found.");
             }
         }
     }

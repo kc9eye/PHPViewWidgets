@@ -15,23 +15,23 @@
  * with this program; if not, write to the Free Software Foundation, Inc.
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-namespace UData\Data {
-    use \UData;
-    class RowSet extends UData\Configuration implements DataMeta {
-        public function __construct (Array $opts = null) {
+namespace UData\Widgets\Elements {
+    use \UData\Widgets;
+    class UIPre extends StdBase {
+        public function __construct (Widgets\WidgetOptions $opts) {
             parent::__construct($opts);
         }
 
-        public function Params () {
-            return new Params($this->keys);
-        }
-
-        public function Values () {
-            return new Values($this->data);
-        }
-
-        public function Count () {
-            return count($this->data);
+        public function ToString () {
+            $this->out = "<pre";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
+            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
+            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
+            $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
+            $this->out .= ">";
+            $this->out .= $this->data->ToString();
+            $this->out .= "</pre>";
+            return $this->out;
         }
     }
 }

@@ -22,7 +22,12 @@ namespace UData {
         protected $pointer;
 
         public function __construct (Array $opts = null) {
-            $this->data = !is_null($opts) ? $opts : array();
+            $this->data = array();
+            if (!is_null($opts)) {
+                foreach($opts as $i=>$v) {
+                    $this->$i = $v;
+                }
+            }
             $this->keys = array_keys($this->data);
             $this->pointer = 0;
         }
@@ -55,7 +60,7 @@ namespace UData {
         }
 
         public function seek ($p) {
-            if ($p >= count($this->keys)) throw new Exception("Key out of bounds");
+            if ($p >= count($this->keys)) throw new \Exception("Key out of bounds");
             $this->pointer = $p;
         }
 

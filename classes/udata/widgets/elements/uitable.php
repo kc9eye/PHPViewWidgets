@@ -15,27 +15,24 @@
  * with this program; if not, write to the Free Software Foundation, Inc.
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-namespace UData\Widgets {
-    use \UData;
-    class StdBase implements Widget {
-        protected $out;
-        protected $opts;
+namespace UData\Widgets\Elements {
+    use \UData\Widgets;
+    class UITable extends StdBase {
 
-        public function __construct (WidgetOptions $opts = null) {
-            if (!is_null($opts)) $this->SetOptions($opts);
-            $this->out = "";
-        }
-
-        public function SetOptions (WidgetOptions $opts) {
-            $this->opts = $opts;
-        }
-
-        public function Display () {
-            echo $this->ToString();
+        public function __construct (Widgets\WidgetOptions $opts) {
+            parent::__construct($opts);
         }
 
         public function ToString () {
-            return $this->opts->string;
+            $this->out = "<table";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
+            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
+            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
+            $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
+            $this->out .= ">";
+            $this->out .= $this->data->ToString();
+            $this->out .= "</table>";
+            return $this->out;
         }
     }
 }

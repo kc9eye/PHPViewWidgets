@@ -17,15 +17,31 @@
  */
 namespace UData\Data {
     use \UData;
-    class DataSet extends UData\IOContainer {
+    class DataSet extends UData\IOContainer implements DataMeta {
         public function __construct (Array $items = null) {
             parent::__construct($items);
         }
 
         public function Add ($item) {
-            if (! $item instanceof RowSet) throw new Exception("DataSet only support containing RowSet 's'.");
+            if (! $item instanceof RowSet) throw new \Exception("DataSet only supports containing RowSet's.");
+            elseif (! empty($this->data)) {
+                if ($this->data[0]->Count() != $item->Count()) throw new \Exception("RowSet's must contain equal parameters.");
+                elseif ($this->data[0]->Params() != $item->Params()) throw new \Exception("DataSet RowSet's must have matching parameters");
+            }
             array_push($this->data, $item);
             $this->keys = array_keys($this->data);
+        }
+
+        public function Params () {
+            return $this->data[0]->Params();
+        }
+
+        public function Values () {
+            return $this->data;
+        }
+
+        public function Count () {
+            return count($this->data);
         }
     }
 }

@@ -15,23 +15,14 @@
  * with this program; if not, write to the Free Software Foundation, Inc.
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-namespace UData\Data {
+namespace UData\Controllers {
     use \UData;
-    class RowSet extends UData\Configuration implements DataMeta {
-        public function __construct (Array $opts = null) {
-            parent::__construct($opts);
-        }
+    class StdBase implements UData\Controller {
+        protected $opts;
+        protected $user;
 
-        public function Params () {
-            return new Params($this->keys);
-        }
+        public function __construct ($title = null) {
 
-        public function Values () {
-            return new Values($this->data);
-        }
-
-        public function Count () {
-            return count($this->data);
         }
     }
 }

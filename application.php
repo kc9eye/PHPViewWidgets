@@ -25,13 +25,14 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 namespace UData {
+    use \UData\Controllers;
     session_name('UDATA');
     session_start();
     ob_start(null,0,PHP_OUTPUT_HANDLER_STDFLAGS^PHP_OUTPUT_HANDLER_REMOVABLE);
 
     include('classes/autoloader.php');
     new \Autoloader(__DIR__,['.php','.int.php','.obj.php']);
-    new \Errorhandler('error_log.xml','https://github.com/kc9eye/udata4.5.git/issues');
+    new \Errorhandler('error_log.xml','https://github.com/kc9eye/udata4.5/issues');
 
     /**
      * The application class instantiated at run time.
@@ -43,21 +44,21 @@ namespace UData {
     class Application {
         /**@var Configuration object - All Cofiguration class methods available */
         public static $AppConfig;
+        public static $Session;
 
         public function __construct () {
             self::$AppConfig = new Configuration([
                 'AppDir'=>__DIR__,
                 'Version'=>4.5
                 ]);
+            self::$Session = new Configuration($_SESSION);
 
-            try {
-                if (!isset($_REQUEST['i'])) 
-                    new Views\StartUI();
-                else
-                    new $_REQUEST['i']();
-            }
-            catch (Exception $e) {
-                die("404 View/API not found.");
+            if (!isset($_REQUEST['c'])) 
+                new Controllers\StartUI();
+            else {
+                $object = "controllers\\{$_REQUEST['c']}";
+                if (class_exists($object)) new $object();
+                else new Controllers\FourOFour();
             }
         }
     }

@@ -15,32 +15,24 @@
  * with this program; if not, write to the Free Software Foundation, Inc.
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-namespace UData\Widgets {
-    use \UData\HTTP;
-    class UIImage extends StdBase {
+namespace UData\Widgets\Elements {
+    use \UData\Widgets;
+    class UIList extends StdBase {
 
-        public function __construct ($opts = null) {
-            if ($opts instanceof WidgetOptions) $this->SetOptions($opts);
-            elseif ($opts instanceof HTTP\Url) $this->SetUrlOptions($opts);
-            elseif (is_string($opts)) $this->SetLocalUrl($opts);
-        }
-
-        private function SetUrlOptions (HTTP\Url $opts) {
-            $this->opts = new WidgetOptions(['url'=>$opts]);
-        }
-
-        private function SetLocalUrl($opts) {
-            $this->opts = new WidgetOptions(['url'=>new HTTP\Url("?i=images&src={$opts}")]);
+        public function __construct (Widgets\WidgetOptions $opts = null) {
+            parent::__construct($opts);
         }
 
         public function ToString () {
-            $out = "<image src='".$this->opts->url->ToString()."' ";
+            $this->out .= isset($this->opts->ordered) ? "<ol" : "<ul";
             $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
-            $out .= "/>";
-            return $out;
+            $this->out .= ">";
+            $this->out .= $this->data->ToString();
+            $this->out .= isset($this->opts->ordered) ? "</ol>" : "</ul>";
+            return $this->out;
         }
     }
 }

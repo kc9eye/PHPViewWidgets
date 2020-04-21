@@ -30,7 +30,7 @@ namespace UData {
         }
 
         public function Add ($item) {
-            if (! \is_object($item)) throw new Exception("IOContainer only support containing objects.");
+            if (! \is_object($item)) throw new \Exception("IOContainer only support containing objects.");
             array_push($this->data, $item);
             $this->keys = array_keys($this->data);
         }
@@ -48,7 +48,7 @@ namespace UData {
         }
 
         public function seek ($p) {
-            if ($p >= count($this->data)) throw new Exception("Key out of bounds");
+            if ($p >= count($this->data)) throw new \Exception("Key out of bounds");
             $this->pointer = $p;
         }
 

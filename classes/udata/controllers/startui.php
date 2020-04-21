@@ -15,23 +15,22 @@
  * with this program; if not, write to the Free Software Foundation, Inc.
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-namespace UData\Data {
+namespace UData\Controllers {
     use \UData;
-    class RowSet extends UData\Configuration implements DataMeta {
-        public function __construct (Array $opts = null) {
-            parent::__construct($opts);
+    use \UData\Widgets;
+    use \UData\Views;
+
+    class StartUI implements UData\Controller {
+        public function __construct () {
+            // Handle any REQUEST options here <---
+            // Branch different methods depending on options <---
+            // Wrap any widgets in a Security call <---
+            $this->TestDisplay();
         }
 
-        public function Params () {
-            return new Params($this->keys);
-        }
-
-        public function Values () {
-            return new Values($this->data);
-        }
-
-        public function Count () {
-            return count($this->data);
+        public function TestDisplay () {
+            $view = new Views\DefaultView();
+            $view->Display();
         }
     }
 }

@@ -23,7 +23,13 @@ namespace UData\Widgets {
         }
 
        public function ToString () {
-            $this->out .= isset($this->opts->size) ? "<h{$this->opts->size}>{$this->opts->string}</h{$this->opts->size}>" : "<h1>{$this->opts->string}</h1>";
+            $this->out .= isset($this->opts->size) ? "<h{$this->opts->size}" : "<h1";
+            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
+            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
+            $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
+            $this->out .= ">{$this->opts->string}</h";
+            $this->out .= isset($this->opts->size) ? "{$this->opts->size}>" : "1>";
             return $this->out;
         }
     }

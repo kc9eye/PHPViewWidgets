@@ -23,17 +23,29 @@ namespace UData\Widgets {
         }
 
         public function ToString () {
-            $this->out .= "<button";
-            $this->out .= isset($this->opts->type) ? " type='{$this->opts->type}'" : " type='button'";
-            $this->out .= isset($this->opts->href) ? " href='{$this->opts->href}'" : "";
+            if (isset($this->opts->href)) {
+                $this->out .= "<a href='{$this->opts->href}' role='button'";
+                $this->setInnerOpts();
+                $this->out .= ">";
+                $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
+                $this->out .= "</a>";
+            }
+            else {
+                $this->out .= "<button";
+                $this->out .= isset($this->opts->type) ? " type='{$this->opts->type}'" : " type='button'";
+                $this->setInnerOpts();
+                $this->out .= ">";
+                $this->out .= isset($this->opts->string) ? $this->opts->string : "";
+                $this->out .= "</button>";
+            }            
+            return $this->out;
+        }
+
+        private function setInnerOpts () {
             $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
-            $this->out .= ">";
-            $this->out .= isset($this->opts->string) ? $this->opts->string : "";
-            $this->out .= "</button>";
-            return $this->out;
         }
     }
 }

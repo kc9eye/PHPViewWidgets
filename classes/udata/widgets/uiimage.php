@@ -30,7 +30,7 @@ namespace UData\Widgets {
         }
 
         private function SetLocalUrl($opts) {
-            $this->opts = new WidgetOptions(['url'=>new HTTP\Url("?i=images&src={$opts}")]);
+            $this->opts = new WidgetOptions(['url'=>new HTTP\Url("?c=images&src={$opts}")]);
         }
 
         public function ToString () {

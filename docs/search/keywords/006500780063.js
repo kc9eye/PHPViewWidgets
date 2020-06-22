@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("exc",["Function"],[["ExceptionHandler",,[["Errorhandler",,,,0,"File:classes/errorhandler.php:Errorhandler.ExceptionHandler","PHPClass:Errorhandler:ExceptionHandler"]]]]);

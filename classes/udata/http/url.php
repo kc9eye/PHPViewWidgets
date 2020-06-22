@@ -92,7 +92,7 @@ namespace UData\HTTP {
         public function seek ($position) {
             if (!isset($this->data[$this->keys[$this->pointer]])) 
                 throw new \Exception("Key out of bounds");
-            $this->pointer = $posititon;
+            $this->pointer = $position;
         }
     }
 }

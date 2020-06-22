@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ins",["Function"],[["Insert",,[["UData\\Widgets\\Elements\\WebElement",,,,0,"File:classes/udata/widgets/elements/webelement.int.php:UData\\Widgets\\Elements\\WebElement.Insert","PHPClass:UData\\Widgets\\Elements\\WebElement:Insert"]]]]);

@@ -1,61 +1,63 @@
 <?php
-/* This file is part of UData.
- * Copyright (C) 2018 Paul W. Lane <kc9eye@outlook.com>
+/**
+ * file: errorhandler.php
+ * 
+ * topic: License
+ * 
+ * Copyright (C) 2018 Paul W. Lane <kc9eye@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
+ * 
  * it under the terms of the GNU General Public License as published by
+ * 
  * the Free Software Foundation; version 2 of the License.
  *
  * This program is distributed in the hope that it will be useful,
+ * 
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * 
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * 
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License along
+ * 
  * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
+
 /**
- * The framework Error/Exception handler.
+ * class: Errorhandler
  * 
- * @package UData\Framework
- * @author Paul W. Lane
- * @license GPLv2
+ * The application Error/Exception handler
+ * 
+ * ---------php----------
+ * new Errorhandler($log_file,$support_link);
+ * ----------------------
  */
 Class Errorhandler {
 
     /**
-     * Filepath to the log file
-     * @var String
+     * about: Properties
+     * 
+     * string $LogFile - Is the URL of the file that receives the XML error information. See <$log_file>
+     * string $ErrorXML - Is the raw error xml data string, prior to writing.
+     * string $ErrorID - Is the string error ID number.
+     * string $SupportLink - Is the link given in <$support_link>
      */
     public $LogFile;
-
-    /**
-     * The XML to be written to the log
-     * @var String
-     */
     public $ErrorXML;
-
-    /**
-     * The id number of the current error or exception.
-     * @var String
-     */
     public $ErrorID;
-
-    /**
-     * The support hyperlink to direct users in the event of an error/exception
-     * @var String
-     */
     public $SupportLink;
 
     /**
-     * Class constructor
+     * function: __construct
      * 
-     * Initializes the class and sets the error and exception handlers.
-     * @param String $log_file Optional file path to the log file. If it doesn't
-     * exist, it's creation is attempted.
-     * @param String $support_link Optional hyper link to direct users to bug reporting.
-     * @author Paul W. Lane
+     * Parameters:
+     * 
+     * string $log_file - Is a string file URL of where to write the log. Default: *./error_log.xml*
+     * string $support_link - Is a string, usually a URL to an inteface were bug information can be left 
      */
     public function __construct ($log_file='error_log.xml',$support_link = null) {
         $this->LogFile = $log_file;
@@ -65,21 +67,17 @@ Class Errorhandler {
     }
 
     /**
-     * The error/exception handling method
+     * function: Errorhandler
      * 
-     * Upon error's or exceptions this method is called to handle it.
-     * In the event the error level is either `E_USER_NOTICE || E_USER_WARNING`
-     * the error/exception is logged and script execution continues. Levels higher than
-     * this or unhandled will be logged and the error screen will be outputed to the stream
-     * indicating the error to the user and stopping script execution.
+     * Is the main error handling method
      * 
-     * @param Int $code The error code/level.
-     * @param String $msg The error message.
-     * @param String $file The file the error occurred.
-     * @param String $line The file line the error occurred.
-     * @param Mixed $trace Can be either a string or array of the error backtrace
-     * @author Paul W. Lane
-     * @return Mixed
+     * parameters:
+     * 
+     * string $code - The system error code string.
+     * string $msg - The system error message string.
+     * string $file - The file URL string the error occurred in.
+     * string $line - The line of the file the error occurred on.
+     * array $trace - An array containing system trace information
      */
     public function ErrorHandler ($code,$msg,$file,$line,$trace) {
         if (isset($_SESSION['bg_process'])) {
@@ -107,14 +105,13 @@ Class Errorhandler {
     }
 
     /**
-     * The exception handler
+     * function: ExceptionHandler
      * 
-     * In the event of an exception this method is called. However,
-     * this method merely calls the `ErrorHandler()` method.
+     * This method calls ErrorHandler
      * 
-     * @param Exception $e The exception object thrown.
-     * @author Paul W. Lane
-     * @return Mixed
+     * See also:
+     * 
+     * <ErrorHandler>
      */
     public function ExceptionHandler ($e) {
         $this->ErrorHandler(
@@ -126,17 +123,6 @@ Class Errorhandler {
         );
     }
 
-    /**
-     * This method prepares the XML for writing to the log.
-     * 
-     * It sets the `ErrorXML` property.
-     * @param Int $code
-     * @param String $msg
-     * @param String $file
-     * @param String $line
-     * @param Mixed $trace
-     * @author Paul W. Lane
-     */
     protected function PrepareXML ($code, $msg, $file, $line, $trace = null) {
         $this->ErrorID = uniqid('ERR_');
         $xml = '<error><id>'.$this->ErrorID.'</id>';
@@ -152,15 +138,6 @@ Class Errorhandler {
         $this->ErrorXML = $xml;
     }
 
-    /**
-     * This is a buffer method.
-     * 
-     * This method determines which method will write the log to the 
-     * error log based on whether or not it exists.
-     * 
-     * @return Void
-     * @author Paul W. Lane
-     */
     protected function WriteLog () {
         if (file_exists($this->LogFile)) {
             $this->AppendLog();
@@ -170,14 +147,6 @@ Class Errorhandler {
         }
     }
 
-    /**
-     * Append the current error to the log file
-     * 
-     * This method appends the current error the already
-     * existsing error log file.
-     * @return Void
-     * @author Paul W. Lane
-     */
     protected function AppendLog () {
         $fh = fopen($this->LogFile, 'c');
         flock($fh,LOCK_EX);
@@ -188,14 +157,7 @@ Class Errorhandler {
         fclose($fh);
     }
 
-    /**
-     * Creates the log file
-     * 
-     * This method creates the log file if it does not
-     * exists and appends the current error to it.
-     * @return void
-     * @author Paul W. Lane
-     */
+
     protected function CreateLog () {
         $fh = fopen($this->LogFile, 'w');
         flock($fh,LOCK_EX);
@@ -207,12 +169,7 @@ Class Errorhandler {
         fclose($fh);
     }
 
-    /**
-     * Ouputs an error interface to the stream and stops script execution.
-     * 
-     * @return Void
-     * @author Paul W. Lane
-     */
+
     public function DisplayErrorScreen () {
         unset($_SESSION);
         $oldbuff = ob_get_contents();

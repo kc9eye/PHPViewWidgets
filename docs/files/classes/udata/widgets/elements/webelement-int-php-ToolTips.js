@@ -1,0 +1,1 @@
+NDContentPage.OnToolTipsLoaded({29:"<div class=\"NDToolTip TInterface LPHP\"><div class=\"TTSummary\">Defines a container object</div></div>",33:"<div class=\"NDToolTip TInterface LPHP\"><div class=\"TTSummary\">Widget interface.</div></div>"});

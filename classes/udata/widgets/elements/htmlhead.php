@@ -24,7 +24,7 @@ namespace UData\Widgets\Elements {
         }
 
         public function ToString () {
-            $this->out .= "<!DOCTYPE html><html><head>";
+            $this->out .= "<head>";
             $this->out .= $this->data->ToString();
             $this->out .= "</head>";
             return $this->out;

@@ -18,7 +18,7 @@
 namespace UData\Widgets\Elements {
     use \UData;
     use \UData\Widgets;
-    use \UData\Elements;
+
     class WidgetContainer implements WebElement, UData\Options {
         private $data;
         private $pointer;
@@ -72,7 +72,7 @@ namespace UData\Widgets\Elements {
         }
 
         public function seek ($p) {
-            if ($p >= count($this->data)) throw new Exception("Key out of bounds");
+            if ($p >= count($this->data)) throw new \Exception("Key out of bounds");
             $this->pointer = $p;
         }
 

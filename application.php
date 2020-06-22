@@ -1,29 +1,34 @@
 <?php
 /**
- * Main soruce point for the application
+ * file: application.php
  * 
- * This file is the only file directly called by the web server.
- * All other elements are directly instantiated by this file.
- * UData4.5 is copyrighted under the GPL version 2 of the license.
- * None of this application is under warranty, expressed or derived
- * for any purpose.
-*/
-/*
+ * topic: License
+ * 
  * Copyright (C) 2020  Paul W. Lane <kc9eye@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
+ * 
  * it under the terms of the GNU General Public License as published by
+ * 
  * the Free Software Foundation; either version 2 of the License.
  *
  * This program is distributed in the hope that it will be useful,
+ * 
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * 
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * 
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License along
+ * 
  * with this program; if not, write to the Free Software Foundation, Inc.
+ * 
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ * 
+ * namespace: UData
  */
+
 namespace UData {
     use \UData\Controllers;
     session_name('UDATA');
@@ -35,14 +40,17 @@ namespace UData {
     new \Errorhandler('error_log.xml','https://github.com/kc9eye/udata4.5/issues');
 
     /**
-     * The application class instantiated at run time.
+     * class: UData\Application
      * 
-     * All other elements are instantiated by this class
-     * @version 1.0
-     * @author Paul W. Lane
+     * This is the main object instantiated. All other objects are 
+     * instantiated inside this object.
      */
     class Application {
-        /**@var Configuration object - All Cofiguration class methods available */
+        /**about: Global Namespace Objects
+         * 
+         * $AppConfig - Is a <Configuration> object containing the main application configuration.
+         * $Session - Is a <Configutaion> object containing the session data.
+         * */
         public static $AppConfig;
         public static $Session;
 

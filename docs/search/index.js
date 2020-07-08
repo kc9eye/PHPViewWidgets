@@ -1,1 +1,1 @@
-NDSearch.OnPrefixIndexLoaded(["add","con","dis","ins","int","lic","opt","php","set","tos","uiw","wid"]);
+NDSearch.OnPrefixIndexLoaded(["__c","add","con","dis","ins","int","lic","opt","php","set","tos","uiw","wid"]);

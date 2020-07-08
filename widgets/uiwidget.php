@@ -35,19 +35,41 @@ use PHPViewWidgets\Interfaces\Widget;
         private $out;
         private $opts;
 
+        //method: __construct
+        //The class constructor
+        //
+        //Parameters:
+        //<PHPViewWidgets\Widgets\Options> $opts - Optional Options class for declaring options at 
+        //contruction. The last call to <SetOptions> prior to calling either <Display> or <ToString>
+        //take precedence. 
         public function __construct(Options $opts = null) {
             if (!is_null($opts)) $this->SetOptions($opts);
             $this->out = "";
         }
 
+        //method: SetOptions
+        //This method sets the options for the widget
+        //
+        //Parmeters:
+        //<PHPViewWidgets\Widgets\Options> $opts - The Options class containing the options for the widget
+        //
+        //About: Options
+        //Most UIWidgets accept the following standard options, other options are available
+        //and denoted on the specific widgets documentation.
+        //*String* - Contains the string that gets output when <ToString> is called
         public function SetOptions(Options $opts) {
             $this->opts = $opts;
         }
 
+        //method: Display
+        //Simply echo's the return of <ToString> to the output buffer
         public function Display() {
             echo $this->ToString();
         }
 
+        //method: ToString
+        //Returns the widgets string output, taking into account all options. 
+        //Classes extending this class should override this method with their own.
         public function ToString() {
             $this->out .= isset($this->opts->string) ? $this->opts->string : "";
             return $this->out;

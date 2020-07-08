@@ -26,8 +26,48 @@
  <div class="NDClassPrototype" id="NDClassPrototype17"><div class="CPEntry TClass Current"><div class="CPModifiers"><span class="SHKeyword">namespace</span> </div><div class="CPName">PHPViewWidgets\Widgets</div></div></div>
 </div>
 
-<a name="PHPViewWidgets\Widgets\UIWidget"></a><a name="Topic18"></a><div class="CTopic TClass LPHP last">
+<a name="PHPViewWidgets\Widgets\UIWidget"></a><a name="Topic18"></a><div class="CTopic TClass LPHP">
  <div class="CTitle">PHPViewWidgets\Widgets\UIWidget</div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.Functions"></a><a name="Topic28"></a><div class="CTopic TGroup LPHP">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.__construct"></a><a name="Topic29"></a><div class="CTopic TFunction LPHP">
+ <div class="CTitle">__construct</div>
+ <div id="NDPrototype29" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> __construct(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">Options&nbsp;</td><td class="PNamePrefix">$</td><td class="PName">opts&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">null</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>The class constructor</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a href="../../index.html#File:widgets/options.php:PHPViewWidgets\Widgets\Options" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\Options</a> $opts</td><td class="CDLDefinition"><p>Optional Options class for declaring options at contruction. The last call to <a href="../../index.html#File:widgets/uiwidget.php:PHPViewWidgets\Widgets\UIWidget.SetOptions" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,30);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SetOptions</a> prior to calling either <a href="../../index.html#File:widgets/uiwidget.php:PHPViewWidgets\Widgets\UIWidget.Display" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,34);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Display</a> or <a href="../../index.html#File:widgets/uiwidget.php:PHPViewWidgets\Widgets\UIWidget.ToString" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,35);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ToString</a> take precedence.</p></td></tr></table></div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.SetOptions"></a><a name="Topic30"></a><div class="CTopic TFunction LPHP">
+ <div class="CTitle">SetOptions</div>
+ <div class="CBody"><p>This method sets the options for the widget</p><div class="CHeading">Parmeters</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a href="../../index.html#File:widgets/options.php:PHPViewWidgets\Widgets\Options" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\Options</a> $opts</td><td class="CDLDefinition"><p>The Options class containing the options for the widget</p></td></tr></table></div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.Information"></a><a name="Topic31"></a><div class="CTopic TGroup LPHP">
+ <div class="CTitle">Information</div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.Options"></a><a name="Topic32"></a><div class="CTopic TInformation LPHP">
+ <div class="CTitle">Options</div>
+ <div class="CBody"><p>Most UIWidgets accept the following standard options, other options are available and denoted on the specific widgets documentation.&nbsp; <b>String</b> - Contains the string that gets output when <a href="../../index.html#File:widgets/uiwidget.php:PHPViewWidgets\Widgets\UIWidget.ToString" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,35);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ToString</a> is called</p></div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.Functions(2)"></a><a name="Topic33"></a><div class="CTopic TGroup LPHP">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.Display"></a><a name="Topic34"></a><div class="CTopic TFunction LPHP">
+ <div class="CTitle">Display</div>
+ <div id="NDPrototype34" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Display()</div>
+ <div class="CBody"><p>Simply echo's the return of <a href="../../index.html#File:widgets/uiwidget.php:PHPViewWidgets\Widgets\UIWidget.ToString" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,35);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ToString</a> to the output buffer</p></div>
+</div>
+
+<a name="PHPViewWidgets\Widgets\UIWidget.ToString"></a><a name="Topic35"></a><div class="CTopic TFunction LPHP last">
+ <div class="CTitle">ToString</div>
+ <div id="NDPrototype35" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> ToString()</div>
+ <div class="CBody"><p>Returns the widgets string output, taking into account all options.&nbsp; Classes extending this class should override this method with their own.</p></div>
 </div>
 
 </body></html>

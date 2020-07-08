@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("__c",["Function"],[["__construct",,[["PHPViewWidgets\\Widgets\\UIWidget",,,,0,"File:widgets/uiwidget.php:PHPViewWidgets\\Widgets\\UIWidget.__construct","PHPClass:PHPViewWidgets\\Widgets\\UIWidget:__construct"]]]]);

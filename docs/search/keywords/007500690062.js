@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uib",["File","Class"],[["UIButton",,[[,"uibutton.php",,,0,"File:classes/udata/widgets/uibutton.php:uibutton.php"],[,"UData\\Widgets\\UIButton",,"udata/widgets/uibutton",1,"File:classes/udata/widgets/uibutton.php:UData\\Widgets\\UIButton","PHPClass:UData\\Widgets\\UIButton"]]]]);

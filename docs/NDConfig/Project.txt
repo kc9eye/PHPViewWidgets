@@ -8,7 +8,8 @@
 # Project Information
 # ------------------------------------------------------------------------
 
-Title: UData2
+Title: PHPViewWidgets
+Subtitle: A view widgets library in PHP
 
 Copyright: © 2020 Paul W. Lane
 
@@ -26,9 +27,6 @@ Timestamp: Genertated on: yyyy-mm-dd
 
 
 # This is where you specify general information about your project.
-#
-# Subtitle: [text]
-#    A subtitle for your project.
 #
 # Style: [style]
 #    The style to apply to the generated documentation.  It can be the name of
@@ -64,6 +62,10 @@ Source Folder: ..\..
 # ------------------------------------------------------------------------
 
 Ignore Source Folder: ..\..\.vscode
+
+Ignore Source Folder: ..
+
+Ignore Source Folder: ..\..\testing
 
 
 # If there are any subfolders in the source code that you would like Natural

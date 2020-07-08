@@ -1,1 +1,0 @@
-NDContentPage.OnToolTipsLoaded({63:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">The standard class that all widgets inherit. Can be used to create any widget required. By using the `string` option.</div></div>",93:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">A standard class for containing widget options.</div></div>"});

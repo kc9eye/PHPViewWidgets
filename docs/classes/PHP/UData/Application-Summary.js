@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("PHPClass:UData\\Application","UData\\Application");NDSummary.OnSummaryLoaded("PHPClass:UData\\Application",[["PHP","PHP"]],[["Classes","Class"],["Groups","Group"],["Information","Information"]],[[21,0,0,"UData\\Application"],[22,0,1,"Information","Information"],[23,0,2,"Global Namespace Objects","Global_Namespace_Objects"]]);

@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("rem",["Function"],[["Remove",,[["UData\\Widgets\\Elements\\WebElement",,,,0,"File:classes/udata/widgets/elements/webelement.int.php:UData\\Widgets\\Elements\\WebElement.Remove","PHPClass:UData\\Widgets\\Elements\\WebElement:Remove"]]]]);

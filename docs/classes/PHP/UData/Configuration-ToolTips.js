@@ -1,1 +1,0 @@
-NDContentPage.OnToolTipsLoaded({1:"<div class=\"NDToolTip TInterface LPHP\"><div class=\"TTSummary\">The options interface.</div></div>"});

@@ -1,1 +1,0 @@
-NDContentPage.OnToolTipsLoaded({93:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">A standard class for containing widget options.</div></div>"});

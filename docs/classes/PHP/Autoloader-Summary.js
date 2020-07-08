@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("PHPClass:Autoloader","Autoloader");NDSummary.OnSummaryLoaded("PHPClass:Autoloader",[["PHP","PHP"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[13,0,0,"Autoloader"],[14,0,2,"Functions","Functions"],[15,0,1,"__construct","__construct"]]);

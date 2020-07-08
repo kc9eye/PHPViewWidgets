@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("std",["File","Class"],[["StdBase",,[[,"stdbase.php",,,0,"File:classes/udata/widgets/stdbase.php:stdbase.php"],[,"UData\\Widgets\\StdBase",,"udata/widgets/stdbase",1,"File:classes/udata/widgets/stdbase.php:UData\\Widgets\\StdBase","PHPClass:UData\\Widgets\\StdBase"]]]]);

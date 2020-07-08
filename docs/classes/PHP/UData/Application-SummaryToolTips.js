@@ -1,1 +1,0 @@
-NDSummary.OnToolTipsLoaded("PHPClass:UData\\Application",{21:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">This is the main object instantiated. All other objects are instantiated inside this object.</div></div>"});

@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("app",["File","Class"],[["Application",,[[,"application.php",,,0,"File:application.php:application.php"],[,"UData\\Application",,"udata/application",1,"File:application.php:UData\\Application","PHPClass:UData\\Application"]]]]);

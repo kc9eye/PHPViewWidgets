@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("opt",["File","Class"],[["option",,[[,"option.php",,,0,"File:widgets/options.php:option.php"]]],["Options",,[[,"PHPViewWidgets\\Widgets\\Options",,"phpviewwidgets/widgets/options",1,"File:widgets/options.php:PHPViewWidgets\\Widgets\\Options","PHPClass:PHPViewWidgets\\Widgets\\Options"]]]]);

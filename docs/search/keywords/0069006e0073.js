@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ins",["Function"],[["Insert",,[["PHPViewWidgets\\Interfaces\\Container",,,,0,"File:interfaces/container.php:PHPViewWidgets\\Interfaces\\Container.Insert","PHPClass:PHPViewWidgets\\Interfaces\\Container:Insert"]]]]);

@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("set",["Function"],[["SetOptions",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:PHPViewWidgets/interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.SetOptions","PHPClass:PHPViewWidgets\\Interfaces\\Widget:SetOptions"]]]]);
+NDSearch.OnPrefixDataLoaded("set",["Function"],[["SetOptions",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.SetOptions","PHPClass:PHPViewWidgets\\Interfaces\\Widget:SetOptions"]]]]);

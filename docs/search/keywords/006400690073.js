@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("dis",["Function"],[["Display",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:PHPViewWidgets/interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.Display","PHPClass:PHPViewWidgets\\Interfaces\\Widget:Display"]]]]);
+NDSearch.OnPrefixDataLoaded("dis",["Function"],[["Display",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.Display","PHPClass:PHPViewWidgets\\Interfaces\\Widget:Display"]]]]);

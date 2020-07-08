@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("uiw",["File","Class"],[["UIWidget",,[[,"uiwidget.php",,,0,"File:widgets/uiwidget.php:uiwidget.php"],[,"PHPViewWidgets\\Widgets\\UIWidget",,"phpviewwidgets/widgets/uiwidget",1,"File:widgets/uiwidget.php:PHPViewWidgets\\Widgets\\UIWidget","PHPClass:PHPViewWidgets\\Widgets\\UIWidget"]]]]);

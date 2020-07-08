@@ -1,1 +1,1 @@
-NDMenu.OnTabsLoaded([["File","Files","File:PHPViewWidgets/interfaces/","files.js"],["Class","Classes","PHPClass:","classes.js"]]);
+NDMenu.OnTabsLoaded([["File","Files","File:","files.js"],["Class","Classes","PHPClass:","classes.js"]]);

@@ -65,8 +65,6 @@ Ignore Source Folder: ..\..\.vscode
 
 Ignore Source Folder: ..
 
-Ignore Source Folder: ..\..\testing
-
 
 # If there are any subfolders in the source code that you would like Natural
 # Docs to ignore, they can be specified here.  If you use any of these options

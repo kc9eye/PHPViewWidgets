@@ -1,1 +1,1 @@
-NDMenu.OnSectionLoaded("files.js",[[1,"widget.php"]]);
+NDMenu.OnSectionLoaded("files.js",[[2,"interfaces","File:interfaces/",[[1,"container.php"],[1,"widget.php"]]],[2,"widgets","File:widgets/",[[1,"options.php"],[1,"uiwidget.php"]]]]);

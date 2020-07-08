@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("lic",["Information"],[["License",,[[,,,,0,"File:PHPViewWidgets/interfaces/widget.php:License"]]]]);
+NDSearch.OnPrefixDataLoaded("lic",["Information"],[["License",,[[,,,,0,"File:interfaces/container.php:License"]]]]);

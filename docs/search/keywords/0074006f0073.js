@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("tos",["Function"],[["ToString",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:PHPViewWidgets/interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.ToString","PHPClass:PHPViewWidgets\\Interfaces\\Widget:ToString"]]]]);
+NDSearch.OnPrefixDataLoaded("tos",["Function"],[["ToString",,[["PHPViewWidgets\\Interfaces\\Widget",,,,0,"File:interfaces/widget.php:PHPViewWidgets\\Interfaces\\Widget.ToString","PHPClass:PHPViewWidgets\\Interfaces\\Widget:ToString"]]]]);

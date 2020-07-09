@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWidgets\\Widgets\\UIHtml",{40:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">Represents a base UI view. This widget is a container, which holds other widgets</div></div>"});

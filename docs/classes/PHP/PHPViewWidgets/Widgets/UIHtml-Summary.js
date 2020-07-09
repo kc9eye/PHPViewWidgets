@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("PHPClass:PHPViewWidgets\\Widgets\\UIHtml","PHPViewWidgets\\Widgets\\UIHtml");NDSummary.OnSummaryLoaded("PHPClass:PHPViewWidgets\\Widgets\\UIHtml",[["PHP","PHP"]],[["Classes","Class"]],[[40,0,0,"PHPViewWidgets\\Widgets\\UIHtml"]]);

@@ -39,7 +39,7 @@ namespace PHPViewWidgets\Interfaces {
         //Void
         public function Add($item);
 
-        //method:Remove
+        //method: Remove
         //Removes the item on the stack at the given position.
         //
         //Paraemters:

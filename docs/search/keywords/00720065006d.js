@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("rem",["Function"],[["Remove",,[["PHPViewWidgets\\Interfaces\\Container",,,,0,"File:interfaces/container.php:PHPViewWidgets\\Interfaces\\Container.Remove","PHPClass:PHPViewWidgets\\Interfaces\\Container:Remove"]]]]);

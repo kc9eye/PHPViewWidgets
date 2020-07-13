@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ext",["Information"],[["Extends",,[["PHPViewWidgets\\Widgets\\UIContainer",,,,0,"File:widgets/uicontainer.php:PHPViewWidgets\\Widgets\\UIContainer.Extends","PHPClass:PHPViewWidgets\\Widgets\\UIContainer:Extends"]]]]);

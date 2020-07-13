@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("imp",["Information"],[["Implements",,[["PHPViewWidgets\\Widgets\\UIContainer",,,,0,"File:widgets/uicontainer.php:PHPViewWidgets\\Widgets\\UIContainer.Implements","PHPClass:PHPViewWidgets\\Widgets\\UIContainer:Implements"]]]]);

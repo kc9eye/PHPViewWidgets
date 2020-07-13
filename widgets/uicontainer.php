@@ -35,10 +35,10 @@ use PHPViewWidgets\Interfaces\Widget;
 //This class is the parent for all widget containers.
 //A widget container is a widget which also contains other widgets
 //
-//Information: Extends
+//Topic: Extends
 //<PHPViewWidgets\Widgets\UIWidget>
 //
-//Information: Implements
+//Topic: Implements
 //<PHPViewWidgets\Interface\Container>
 class UIContainer extends UIWidget implements Container{
     protected $data;
@@ -60,10 +60,10 @@ class UIContainer extends UIWidget implements Container{
     }
 
     //method: Add
-    //This method is used to add <PHPViewWidget\Interface\Widget> objects to the container
+    //This method is used to add <PHPViewWidgets\Interface\Widget> objects to the container
     //
     //Parmeters:
-    //<PHPViewWidget\Interface\Widget> $widget - Object conforming to the <Widget> interface.
+    //<PHPViewWidgets\Interface\Widget> $widget - Object conforming to the <Widget> interface.
     //
     //Returns:
     //Void
@@ -72,7 +72,7 @@ class UIContainer extends UIWidget implements Container{
     }
 
     //method: Insert
-    //This method is used to insert a <PHPViewWidget\Interface\Widget> object to the stack at the given position.
+    //This method is used to insert a <PHPViewWidgets\Interface\Widget> object to the stack at the given position.
     //
     //Parameters:
     //<PHPViewWidgets\Interface\Widget> $widget - The <Widget> object to insert.
@@ -98,7 +98,7 @@ class UIContainer extends UIWidget implements Container{
 
     //method: ToString
     //
-    //Information: Overrides
+    //Topic: Overrides
     //<PHPViewWidgets\Widgets\UIWidgets>::ToString()
     public function ToString() {
         foreach($this->data as $widget) {

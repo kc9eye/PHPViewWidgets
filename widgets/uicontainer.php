@@ -32,7 +32,7 @@ use PHPViewWidgets\Interfaces\Container;
 use PHPViewWidgets\Interfaces\Widget;
 
 class UIContainer extends UIWidget implements Container{
-    private $data;
+    protected $data;
 
     public function __construct(Options $opts = null, Array $widgets = []) {
         parent::__construct($opts);

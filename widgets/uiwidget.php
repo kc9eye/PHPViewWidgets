@@ -32,8 +32,8 @@ use PHPViewWidgets\Interfaces\Widget;
 
 //class: PHPViewWidgets\Widgets\UIWidget
     class UIWidget implements Widget {
-        private $out;
-        private $opts;
+        protected $out;
+        protected $opts;
 
         //method: __construct
         //The class constructor

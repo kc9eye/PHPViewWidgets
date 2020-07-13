@@ -28,5 +28,10 @@
 //namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets;
 
+use PHPViewWidgets\Interfaces\Container;
+
 //class: PHPViewWidgets\Widgets\UIHtml
 //Represents a base UI view. This widget is a container, which holds other widgets
+class UIHtml extends UIWidget {
+    
+}

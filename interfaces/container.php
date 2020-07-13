@@ -37,7 +37,7 @@ namespace PHPViewWidgets\Interfaces {
         //
         //Returns:
         //Void
-        public function Add($item);
+        public function Add(Widget $widget);
 
         //method: Remove
         //Removes the item on the stack at the given position.
@@ -59,6 +59,6 @@ namespace PHPViewWidgets\Interfaces {
         //
         //Returns:
         //Void
-        public function Insert($item, $postition);
+        public function Insert(Widget $widget, $postition);
     }
 }

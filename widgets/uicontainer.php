@@ -49,7 +49,7 @@ class UIContainer extends UIWidget implements Container{
     }
 
     public function Insert(Widget $widget, $position) {
-        array_splice($this->data, $position, 0, $widget);
+        array_splice($this->data, 0, $position, $widget);
     }
 
     public function Remove($position) {

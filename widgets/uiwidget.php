@@ -30,7 +30,11 @@ namespace PHPViewWidgets\Widgets {
 
 use PHPViewWidgets\Interfaces\Widget;
 
-//class: PHPViewWidgets\Widgets\UIWidget
+    //class: PHPViewWidgets\Widgets\UIWidget
+    //The base class for all widgets, most widgets extend this class and override the <ToString> method.
+    //
+    //Topic: Implements
+    //<PHPViewWidgets\Interfaces\Widget>
     class UIWidget implements Widget {
         protected $out;
         protected $opts;

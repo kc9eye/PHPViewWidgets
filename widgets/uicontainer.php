@@ -54,7 +54,7 @@ class UIContainer extends UIWidget implements Container{
 
     public function Remove($position) {
         array_splice($this->data, $position, 1);
-    }
+     }
 
     public function ToString() {
         foreach($this->data as $widget) {

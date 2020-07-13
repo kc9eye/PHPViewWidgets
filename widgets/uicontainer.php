@@ -31,7 +31,7 @@ namespace PHPViewWidgets\Widgets;
 use PHPViewWidgets\Interfaces\Container;
 use PHPViewWidgets\Interfaces\Widget;
 
-//class: UIContianer
+//class: PHPViewWidgets\Widgets\UIContainer
 //This class is the parent for all widget containers.
 //A widget container is a widget which also contains other widgets
 //

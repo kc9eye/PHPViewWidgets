@@ -25,7 +25,7 @@
 //
 //51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
-//namespace: PHPViewWdigets\Widgets
+//namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets;
 
 use PHPViewWidgets\Interfaces\Container;

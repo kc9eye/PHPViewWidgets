@@ -1,1 +1,0 @@
-NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWdigets\\Widgets",{});

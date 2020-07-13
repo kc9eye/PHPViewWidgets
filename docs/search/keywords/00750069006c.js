@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("uil",["File","Class"],[["UILink",,[[,"uilink.php",,,0,"File:widgets/uilink.php:uilink.php"],[,"PHPViewWidgets\\Widgets\\UILink",,"phpviewwidgets/widgets/uilink",1,"File:widgets/uilink.php:PHPViewWidgets\\Widgets\\UILink","PHPClass:PHPViewWidgets\\Widgets\\UILink"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("uim",["File","Class"],[["UIMeta",,[[,"uimeta.php",,,0,"File:widgets/uimeta.php:uimeta.php"],[,"PHPViewWidgets\\Widgets\\UIMeta",,"phpviewwidgets/widgets/uimeta",1,"File:widgets/uimeta.php:PHPViewWidgets\\Widgets\\UIMeta","PHPClass:PHPViewWidgets\\Widgets\\UIMeta"]]]]);

@@ -30,6 +30,9 @@ namespace PHPViewWidgets\Widgets {
     //class: PHPViewWidgets\Widgets\UIHead
     //Represents a head widget. This class is a container class.
     //
+    //Topic: Extends
+    //<PHPViewWidgets\Widgets\UIContainer>
+    //
     //Topic: Options
     //This widget accepts the following options:
     //None

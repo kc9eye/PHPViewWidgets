@@ -1,5 +1,5 @@
 <?php
-//File: uibody.php
+//File: uilink.php
 //
 //About: License
 //
@@ -27,30 +27,30 @@
 //
 //namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets {
-    //class: PHPViewWidgets\Widgets\UIBody
-    //This class represents a body widget, and is a container widget.
+    //class: PHPViewWidgets\Widgets\UILink
+    //This class represents a link widget, it *IS NOT* a container widget.
     //
-    //Topic: Extends
-    //<PHPViewWidgets\Widgets\UIContainer>
+    //topic: Extends
+    //<PHPViewWidgets\Widgets\UIWidget>
     //
-    //Topic: Options
-    //This widget accepts the following options:
-    //id - An optional string for an id attribute.
-    //style - An optional string for a style attribute.
-    //other - An optional string that will be added verbatium as attribute.
-    class UIBody extends UIContainer {
-        public function __construct(Options $opts = null, Array $widgets = []) {
-            parent::__construct($opts, $widgets);
+    //topic: Options
+    //This class accepts the following options:
+    //rel - The rel attribute.
+    //href - The href attribute.
+    //type - An optional type attribute.
+    //other - An optional attribute to placed verbatium.
+    class UILink extends UIWidget {
+        public function __construct(Options $opts = null) {
+            parent::__construct($opts);
         }
 
         public function ToString() {
-            $this->out .= "<body";
-            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
-            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
+            $this->out .= "<link";
+            $this->out .= isset($this->opts->rel) ? " rel='{$this->opts->rel}'" : "";
+            $this->out .= isset($this->opts->href) ? " href='{$this->opts->href}'" : "";
+            $this->out .= isset($this->opts->type) ? " type='{$this->opts->type}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
-            $this->out .= ">";
-            $this->unspoolContainer();
-            $this->out .= "</body>";
+            $this->out .= " />";
             return $this->out;
         }
     }

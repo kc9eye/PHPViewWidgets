@@ -35,6 +35,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //Topic: Options
     //This widget accepts the following options:
+    //
     //id - An optional string for an id attribute.
     //style - An optional string for a style attribute.
     //other - An optional string that will be added verbatium as attribute.

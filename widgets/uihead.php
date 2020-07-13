@@ -35,6 +35,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //Topic: Options
     //This widget accepts the following options:
+    //
     //None
     class UIHead extends UIContainer {
         public function __construct(Options $opts = null, Array $widgets = []) {

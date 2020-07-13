@@ -35,6 +35,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //topic: Options
     //This widget accepts the follwoing options:
+    //
     //name - The name attribute.
     //content - The content attribute.
     //http_equiv - An optional http-equiv attribute

@@ -35,6 +35,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //topic: Options
     //This class accepts the following options:
+    //
     //rel - The rel attribute.
     //href - The href attribute.
     //type - An optional type attribute.

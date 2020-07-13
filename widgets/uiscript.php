@@ -35,6 +35,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //Topic: Options
     //This class accepts the following options:
+    //
     //src - An optional src attribute
     //type - An optional type attribute
     //other - An optional attribute to added verbatium

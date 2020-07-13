@@ -38,6 +38,7 @@ use PHPViewWidgets\Interfaces\Container;
 //
 //Topic: Options
 //This widget accepts the following options:
+//
 //None
 class UIHtml extends UIContainer {
     public function __construct(Options $opts = null, Array $widgets = []) {

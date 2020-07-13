@@ -39,7 +39,7 @@ use PHPViewWidgets\Interfaces\Widget;
 //<PHPViewWidgets\Widgets\UIWidget>
 //
 //Topic: Implements
-//<PHPViewWidgets\Interface\Container>
+//<PHPViewWidgets\Interfaces\Container>
 class UIContainer extends UIWidget implements Container{
     protected $data;
 
@@ -48,7 +48,7 @@ class UIContainer extends UIWidget implements Container{
     //
     //Parameters:
     //<PHPViewWidgets\Widgets\Options> $opts - Is an optional Options class containing options for the main widget.
-    //Array $widgets - Is an optional Array containing <PHPViewWidgets\Interface\Widget> objects.
+    //Array $widgets - Is an optional Array containing <PHPViewWidgets\Interfaces\Widget> objects.
     public function __construct(Options $opts = null, Array $widgets = []) {
         parent::__construct($opts);
         $this->data = [];
@@ -60,10 +60,10 @@ class UIContainer extends UIWidget implements Container{
     }
 
     //method: Add
-    //This method is used to add <PHPViewWidgets\Interface\Widget> objects to the container
+    //This method is used to add <PHPViewWidgets\Interfaces\Widget> objects to the container
     //
     //Parmeters:
-    //<PHPViewWidgets\Interface\Widget> $widget - Object conforming to the <Widget> interface.
+    //<PHPViewWidgets\Interfaces\Widget> $widget - Object conforming to the <Widget> interface.
     //
     //Returns:
     //Void
@@ -72,7 +72,7 @@ class UIContainer extends UIWidget implements Container{
     }
 
     //method: Insert
-    //This method is used to insert a <PHPViewWidgets\Interface\Widget> object to the stack at the given position.
+    //This method is used to insert a <PHPViewWidgets\Interfaces\Widget> object to the stack at the given position.
     //
     //Parameters:
     //<PHPViewWidgets\Interface\Widget> $widget - The <Widget> object to insert.

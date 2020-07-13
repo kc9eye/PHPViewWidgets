@@ -101,9 +101,13 @@ class UIContainer extends UIWidget implements Container{
     //Topic: Overrides
     //<PHPViewWidgets\Widgets\UIWidget> :: ToString()
     public function ToString() {
+        $this->unspoolContainer();
+        return $this->out;
+    }
+
+    protected function unspoolContainer() {
         foreach($this->data as $widget) {
             $this->out .= $widget->ToString();
         }
-        return $this->out;
     }
 }

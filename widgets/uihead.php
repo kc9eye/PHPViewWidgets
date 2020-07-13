@@ -1,5 +1,5 @@
 <?php
-//File: uihtml.php
+//File: uihead.php
 //
 //About: License
 //
@@ -26,29 +26,23 @@
 //51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
 //namespace: PHPViewWidgets\Widgets
-namespace PHPViewWidgets\Widgets;
+namespace PHPViewWidgets\Widgets {
+    //class: PHPViewWidgets\Widgets\UIHead
+    //Represents a head widget. This class is a container class.
+    //
+    //Topic: Options
+    //This widget accepts the following options:
+    //None
+    class UIHead extends UIContainer {
+        public function __construct(Options $opts = null, Array $widgets = []) {
+            parent::__construct($opts, $widgets);
+        }
 
-use PHPViewWidgets\Interfaces\Container;
-
-//class: PHPViewWidgets\Widgets\UIHtml
-//Represents a base UI view. This widget is a container, which holds other widgets.
-//
-//Topic: Extends
-//<PHPViewWidgets\Widgets\UIContainer>
-//
-//Topic: Options
-//This widget accepts the following options:
-//None
-class UIHtml extends UIContainer {
-    public function __construct(Options $opts = null, Array $widgets = []) {
-        parent::__construct($opts, $widgets);
-    }
-    
-    public function ToString() {
-        $this->out .= "<!DOCTYPE html>";
-        $this->out .= "<html>";
-        $this->unspoolContainer();
-        $this->out .= "</html>";
-        return $this->out;
+        public function ToString() {
+            $this->out .= "<head>";
+            $this->unspoolContainer();
+            $this->out .= "</head>";
+            return $this->out;
+        }
     }
 }

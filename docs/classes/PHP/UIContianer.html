@@ -8,9 +8,9 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic46"></a><div class="CTopic TClass LPHP first">
+<a name="Topic53"></a><div class="CTopic TClass LPHP first">
  <div class="CTitle">UIContianer</div>
- <div class="CBody"><p>This class is the parent for all widget containers.&nbsp; A widget container is a widget which also contains other widgets Information: Extends <a href="../../index.html#PHPClass:PHPViewWidgets\Widgets\UIWidget" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,18);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\UIWidget</a> Information: Implements &lt;PHPViewWidgets\Interface\Container&gt;</p></div>
+ <div class="CBody"><p>This class is the parent for all widget containers.&nbsp; A widget container is a widget which also contains other widgets</p><p>Information: Extends <a href="../../index.html#PHPClass:PHPViewWidgets\Widgets\UIWidget" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,18);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\UIWidget</a></p><p>Information: Implements &lt;PHPViewWidgets\Interface\Container&gt;</p></div>
 </div>
 
 <a name="Functions"></a><a name="Topic47"></a><div class="CTopic TGroup LPHP">
@@ -23,28 +23,28 @@
  <div class="CBody"><p>Class constructor</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a href="../../index.html#PHPClass:PHPViewWidgets\Widgets\Options" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\Options</a> $opts</td><td class="CDLDefinition"><p>Is an optional Options class containing options for the main widget.</p></td></tr><tr><td class="CDLEntry">Array $widgets</td><td class="CDLDefinition"><p>Is an optional Array containing &lt;PHPViewWidgets\Interface\Widget&gt; objects.</p></td></tr></table></div>
 </div>
 
-<a name="Add"></a><a name="Topic49"></a><div class="CTopic TFunction LPHP">
+<a name="Add"></a><a name="Topic54"></a><div class="CTopic TFunction LPHP">
  <div class="CTitle">Add</div>
- <div id="NDPrototype49" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Add(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">Widget&nbsp;</td><td class="PNamePrefix">$</td><td class="PName last">widget</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>This method is used to add &lt;PHPViewWidget\Interface\Widget&gt; objects to the container Parmeters: &lt;PHPViewWidget\Interface\Widget&gt; $widget - Object conforming to the &lt;Widget&gt; interface.&nbsp; Returns: Void</p></div>
+ <div id="NDPrototype54" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Add(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">Widget&nbsp;</td><td class="PNamePrefix">$</td><td class="PName last">widget</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>This method is used to add &lt;PHPViewWidget\Interface\Widget&gt; objects to the container</p><div class="CHeading">Parmeters</div><table class="CDefinitionList"><tr><td class="CDLEntry">&lt;PHPViewWidget\Interface\Widget&gt; $widget</td><td class="CDLDefinition"><p>Object conforming to the &lt;Widget&gt; interface.</p></td></tr></table><div class="CHeading">Returns</div><p>Void</p></div>
 </div>
 
-<a name="Insert"></a><a name="Topic50"></a><div class="CTopic TFunction LPHP">
+<a name="Insert"></a><a name="Topic55"></a><div class="CTopic TFunction LPHP">
  <div class="CTitle">Insert</div>
- <div id="NDPrototype50" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Insert(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">Widget&nbsp;</td><td class="PNamePrefix">$</td><td class="PName last">widget,</td></tr><tr><td class="first"></td><td class="PNamePrefix">$</td><td class="PName last">position</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>This method is used to insert a &lt;PHPViewWidget\Interface\Widget&gt; object to the stack at the given position.&nbsp; Parameters: &lt;PHPViewWidgets\Interface\Widget&gt; $widget - The &lt;Widget&gt; object to insert.&nbsp; <b>Integer</b> $postition - The zero based numeric position of where to insert the widget in the container.&nbsp; Returns: Void</p></div>
+ <div id="NDPrototype55" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Insert(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">Widget&nbsp;</td><td class="PNamePrefix">$</td><td class="PName last">widget,</td></tr><tr><td class="first"></td><td class="PNamePrefix">$</td><td class="PName last">position</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>This method is used to insert a &lt;PHPViewWidget\Interface\Widget&gt; object to the stack at the given position.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">&lt;PHPViewWidgets\Interface\Widget&gt; $widget</td><td class="CDLDefinition"><p>The &lt;Widget&gt; object to insert.</p></td></tr><tr><td class="CDLEntry"><b>Integer</b> $postition</td><td class="CDLDefinition"><p>The zero based numeric position of where to insert the widget in the container.</p></td></tr></table><div class="CHeading">Returns</div><p>Void</p></div>
 </div>
 
-<a name="Remove"></a><a name="Topic51"></a><div class="CTopic TFunction LPHP">
+<a name="Remove"></a><a name="Topic56"></a><div class="CTopic TFunction LPHP">
  <div class="CTitle">Remove</div>
- <div id="NDPrototype51" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Remove(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PNamePrefix first">$</td><td class="PName last">position</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Removes the widget for the container at the location given Parameters: <b>Interger</b> $position - The zero based position of the widget to remove from the container.&nbsp; Returns: Void</p></div>
+ <div id="NDPrototype56" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> Remove(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PNamePrefix first">$</td><td class="PName last">position</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Removes the widget for the container at the location given</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry"><b>Interger</b> $position</td><td class="CDLDefinition"><p>The zero based position of the widget to remove from the container.</p></td></tr></table><div class="CHeading">Returns</div><p>Void</p></div>
 </div>
 
-<a name="ToString"></a><a name="Topic52"></a><div class="CTopic TFunction LPHP last">
+<a name="ToString"></a><a name="Topic57"></a><div class="CTopic TFunction LPHP last">
  <div class="CTitle">ToString</div>
- <div id="NDPrototype52" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> ToString()</div>
- <div class="CBody"><p><b>See:</b> <a href="../../index.html#PHPClass:PHPViewWidgets\Widgets\UIWidget" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,18);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PHPViewWidgets\Widgets\UIWidget</a></p></div>
+ <div id="NDPrototype57" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> <span class="SHKeyword">function</span> ToString()</div>
+ <div class="CBody"><p>Information: Overrides &lt;PHPViewWidgets\Widgets\UIWidgets&gt;::ToString()</p></div>
 </div>
 
 </body></html>

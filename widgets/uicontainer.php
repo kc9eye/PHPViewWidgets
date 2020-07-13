@@ -34,8 +34,10 @@ use PHPViewWidgets\Interfaces\Widget;
 //class: UIContianer
 //This class is the parent for all widget containers.
 //A widget container is a widget which also contains other widgets
+//
 //Information: Extends
 //<PHPViewWidgets\Widgets\UIWidget>
+//
 //Information: Implements
 //<PHPViewWidgets\Interface\Container>
 class UIContainer extends UIWidget implements Container{
@@ -59,8 +61,10 @@ class UIContainer extends UIWidget implements Container{
 
     //method: Add
     //This method is used to add <PHPViewWidget\Interface\Widget> objects to the container
+    //
     //Parmeters:
     //<PHPViewWidget\Interface\Widget> $widget - Object conforming to the <Widget> interface.
+    //
     //Returns:
     //Void
     public function Add(Widget $widget) {
@@ -69,9 +73,11 @@ class UIContainer extends UIWidget implements Container{
 
     //method: Insert
     //This method is used to insert a <PHPViewWidget\Interface\Widget> object to the stack at the given position.
+    //
     //Parameters:
     //<PHPViewWidgets\Interface\Widget> $widget - The <Widget> object to insert.
     //*Integer* $postition - The zero based numeric position of where to insert the widget in the container.
+    //
     //Returns:
     //Void
     public function Insert(Widget $widget, $position) {
@@ -80,8 +86,10 @@ class UIContainer extends UIWidget implements Container{
 
     //method: Remove
     //Removes the widget for the container at the location given
+    //
     //Parameters:
     //*Interger* $position - The zero based position of the widget to remove from the container.
+    //
     //Returns:
     //Void
     public function Remove($position) {
@@ -89,7 +97,9 @@ class UIContainer extends UIWidget implements Container{
      }
 
     //method: ToString
-    //*See:* <PHPViewWidgets\Widgets\UIWidget>
+    //
+    //Information: Overrides
+    //<PHPViewWidgets\Widgets\UIWidgets>::ToString()
     public function ToString() {
         foreach($this->data as $widget) {
             $this->out .= $widget->ToString();

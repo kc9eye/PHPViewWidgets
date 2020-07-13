@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("add",["Function"],[["Add",,[["PHPViewWidgets\\Interfaces\\Container",,,,0,"File:interfaces/container.php:PHPViewWidgets\\Interfaces\\Container.Add","PHPClass:PHPViewWidgets\\Interfaces\\Container:Add"]]]]);
+NDSearch.OnPrefixDataLoaded("add",["Function"],[["Add",,[["PHPViewWidgets\\Interfaces\\Container",,,,0,"File:interfaces/container.php:PHPViewWidgets\\Interfaces\\Container.Add","PHPClass:PHPViewWidgets\\Interfaces\\Container:Add"],["UIContianer",,,,0,"File:widgets/uicontainer.php:UIContianer.Add","PHPClass:UIContianer:Add"]]]]);

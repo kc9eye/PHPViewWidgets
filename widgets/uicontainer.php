@@ -31,9 +31,22 @@ namespace PHPViewWidgets\Widgets;
 use PHPViewWidgets\Interfaces\Container;
 use PHPViewWidgets\Interfaces\Widget;
 
+//class: UIContianer
+//This class is the parent for all widget containers.
+//A widget container is a widget which also contains other widgets
+//Information: Extends
+//<PHPViewWidgets\Widgets\UIWidget>
+//Information: Implements
+//<PHPViewWidgets\Interface\Container>
 class UIContainer extends UIWidget implements Container{
     protected $data;
 
+    //method: __construct
+    //Class constructor
+    //
+    //Parameters:
+    //<PHPViewWidgets\Widgets\Options> $opts - Is an optional Options class containing options for the main widget.
+    //Array $widgets - Is an optional Array containing <PHPViewWidgets\Interface\Widget> objects.
     public function __construct(Options $opts = null, Array $widgets = []) {
         parent::__construct($opts);
         $this->data = [];
@@ -44,18 +57,39 @@ class UIContainer extends UIWidget implements Container{
         }
     }
 
+    //method: Add
+    //This method is used to add <PHPViewWidget\Interface\Widget> objects to the container
+    //Parmeters:
+    //<PHPViewWidget\Interface\Widget> $widget - Object conforming to the <Widget> interface.
+    //Returns:
+    //Void
     public function Add(Widget $widget) {
         array_push($this->data, $widget);
     }
 
+    //method: Insert
+    //This method is used to insert a <PHPViewWidget\Interface\Widget> object to the stack at the given position.
+    //Parameters:
+    //<PHPViewWidgets\Interface\Widget> $widget - The <Widget> object to insert.
+    //*Integer* $postition - The zero based numeric position of where to insert the widget in the container.
+    //Returns:
+    //Void
     public function Insert(Widget $widget, $position) {
         array_splice($this->data, $position, 0, [$widget]);
     }
 
+    //method: Remove
+    //Removes the widget for the container at the location given
+    //Parameters:
+    //*Interger* $position - The zero based position of the widget to remove from the container.
+    //Returns:
+    //Void
     public function Remove($position) {
         array_splice($this->data, $position, 1);
      }
 
+    //method: ToString
+    //*See:* <PHPViewWidgets\Widgets\UIWidget>
     public function ToString() {
         foreach($this->data as $widget) {
             $this->out .= $widget->ToString();

@@ -99,7 +99,7 @@ class UIContainer extends UIWidget implements Container{
     //method: ToString
     //
     //Topic: Overrides
-    //<PHPViewWidgets\Widgets\UIWidgets>::ToString()
+    //<PHPViewWidgets\Widgets\UIWidget>::ToString()
     public function ToString() {
         foreach($this->data as $widget) {
             $this->out .= $widget->ToString();

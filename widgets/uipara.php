@@ -42,6 +42,20 @@ namespace PHPViewWidgets\Widgets {
     //style - An optional style attribute.
     //other - An optional string to be used verbatium as an attribute.
     class UIPara extends UIWidget {
-        
+        public function __construct(Options $opts = null) {
+            parent::__construct($opts);
+        }
+
+        public function ToString() {
+            $this->out .= "<p";
+            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}" : "";
+            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
+            $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
+            $this->out .= ">";
+            $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
+            $this->out .= "</p>";
+            return $this->out;
+        }
     }
 }

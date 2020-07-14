@@ -106,6 +106,7 @@ class UIContainer extends UIWidget implements Container{
     }
 
     protected function unspoolContainer() {
+        if (empty($this->data)) return;
         foreach($this->data as $widget) {
             $this->out .= $widget->ToString();
         }

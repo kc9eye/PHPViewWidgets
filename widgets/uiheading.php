@@ -45,9 +45,9 @@ namespace PHPViewWidgets\Widgets {
 
         public function ToString() {
             $size = isset($this->opts->size) ? "{$this->opts->size}>" : "1>";
-            $this->out .= "<h{$size}>";
+            $this->out .= "<h{$size}";
             $this->out .= isset($this->opts->heading) ? "{$this->opts->heading}" : "";
-            $this->out .= "</h{$size}>";
+            $this->out .= "</h{$size}";
             return $this->out;
         }
     }

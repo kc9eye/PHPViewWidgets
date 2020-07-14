@@ -49,7 +49,7 @@ namespace PHPViewWidgets\Widgets {
         public function ToString() {
             $this->out .= "<p";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
-            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}" : "";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
             $this->out .= ">";

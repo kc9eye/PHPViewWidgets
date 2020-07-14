@@ -56,6 +56,7 @@ namespace PHPViewWidgets\Widgets {
             $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
             $this->unspoolContainer();
             $this->out .= "</div>";
+            return $this->out;
         }
     }
 }

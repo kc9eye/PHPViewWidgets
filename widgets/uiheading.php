@@ -51,7 +51,7 @@ namespace PHPViewWidgets\Widgets {
 
             $this->out .= "<h{$size}";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
-            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}" : "";
+            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
             $this->out .= ">";
             $this->out .= isset($this->opts->heading) ? "{$this->opts->heading}" : "";

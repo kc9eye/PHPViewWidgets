@@ -39,6 +39,7 @@ namespace PHPViewWidgets\Widgets {
     //heading - The string heading.
     //size - The optional integer denoting the heading size (default is 1, the largest)
     //id - The optional id attribute.
+    //class - An optional class attribute.
     //style - The optional style attribute.
     //other - An optional attribute to add verbatium
     class UIHeading extends UIWidget {
@@ -50,6 +51,7 @@ namespace PHPViewWidgets\Widgets {
             $size = isset($this->opts->size) ? "{$this->opts->size}" : "1";
 
             $this->out .= "<h{$size}";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";

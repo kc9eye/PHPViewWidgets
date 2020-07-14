@@ -38,6 +38,7 @@ namespace PHPViewWidgets\Widgets {
     //
     //id - An optional string for an id attribute.
     //style - An optional string for a style attribute.
+    //class - An optional class attribute.
     //other - An optional string that will be added verbatium as attribute.
     class UIBody extends UIContainer {
         public function __construct(Options $opts = null, Array $widgets = []) {
@@ -46,6 +47,7 @@ namespace PHPViewWidgets\Widgets {
 
         public function ToString() {
             $this->out .= "<body";
+            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";

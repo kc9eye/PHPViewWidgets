@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("tem",["Class"],[["Templates",,[[,"PHPViewWidgets\\Templates\\BS4Button",,"phpviewwidgets/templates/bs4button",0,"File:templates/bs4button.php:PHPViewWidgets\\Templates\\BS4Button","PHPClass:PHPViewWidgets\\Templates\\BS4Button"]]]]);

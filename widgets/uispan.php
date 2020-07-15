@@ -1,5 +1,5 @@
 <?php
-//File: uitd.php
+//File: uispan.php
 //
 //About: License
 //
@@ -27,7 +27,8 @@
 //
 //namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets {
-    //This class represents a td widget
+ //class: PHPViewWidgets\Widgets\UITbody
+    //This class represents a tbody widget
     //
     //topic: Extends
     //<PHPViewWidgets\Widgets\UIContainer>
@@ -37,24 +38,24 @@ namespace PHPViewWidgets\Widgets {
     //
     //id - an optional id attribute
     //class - an optional class attribute
-    //style - an optional style attribut
-    //other - an optional string to add verbatium as attribute
-    //string - an optional string to place inside the widget
-    class UITd extends UIContainer {
-        public function __construct(Options $opts = null, Array $widgets = []) {
+    //style - an optional style attribute
+    //other - an optional string to be added verbatium as an attribute
+    //string - an optional string for the inner widget
+    class UISpan extends UIContainer {
+        public function construct(Options $opts = null, Array $widgets = []) {
             parent::__construct($opts,$widgets);
         }
 
         public function ToString() {
-            $this->out .= "<td";
+            $this->out .= "<span";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
-            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
+            $this->out .= isset($this->opts->class) ? " id='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
             $this->out .= ">";
             $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
             $this->unspoolContainer();
-            $this->out .= "</td>";
+            $this->out .= "</span>";
             return $this->out;
         }
     }

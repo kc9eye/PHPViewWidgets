@@ -41,6 +41,7 @@ namespace PHPViewWidgets\Widgets {
     //class - An optional class attribute.
     //style - An optional style attribute.
     //other - An optional string to be used verbatium as an attribute.
+    //string - the inner string for the widget
     class UIPara extends UIWidget {
         public function __construct(Options $opts = null) {
             parent::__construct($opts);

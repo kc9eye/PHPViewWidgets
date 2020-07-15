@@ -1,5 +1,5 @@
 <?php
-//File: uirow.php
+//File: uitr.php
 //
 //About: License
 //
@@ -27,7 +27,7 @@
 //
 //namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets {
-    //class: PHPViewWidgets\Widgets\UIRow
+    //class: PHPViewWidgets\Widgets\UITr
     //This class represents a row widget
     //
     //topic: Extends
@@ -40,7 +40,7 @@ namespace PHPViewWidgets\Widgets {
     //class - an optional class attribute
     //style - an optional style attribut
     //other - an optional string to add verbatium as attribute
-    class UIRow extends UIContainer {
+    class UITr extends UIContainer {
         public function __construct(Options $opts = null, Array $widgets = []) {
             parent::__construct($opts,$widgets);
         }

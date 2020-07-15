@@ -1,5 +1,5 @@
 <?php
-//File: uitd.php
+//File: uianchor.php
 //
 //About: License
 //
@@ -27,35 +27,36 @@
 //
 //namespace: PHPViewWidgets\Widgets
 namespace PHPViewWidgets\Widgets {
-    //This class represents a td widget
+    //class: PHPViewWidgets\Widgets\UIAnchor
+    //This class represents a paragraph widget
     //
     //topic: Extends
-    //<PHPViewWidgets\Widgets\UIContainer>
+    //<PHPViewWidgets\Widgets\UIWidget>
     //
     //topic: Options
     //This widget accepts the following options:
     //
-    //id - an optional id attribute
-    //class - an optional class attribute
-    //style - an optional style attribut
-    //other - an optional string to add verbatium as attribute
-    //string - an optional string to place inside the widget
-    class UITd extends UIContainer {
-        public function __construct(Options $opts = null, Array $widgets = []) {
-            parent::__construct($opts,$widgets);
+    //string - The inner paragraph string.
+    //id - An optional id attribute.
+    //class - An optional class attribute.
+    //style - An optional style attribute.
+    //other - An optional string to be used verbatium as an attribute.
+    //href - the href attribute
+    //string - the anchor string
+    class UIAnchor extends UIWidget {
+        public function __construct(Options $opts = null) {
+            parent::__construct($opts);
         }
 
         public function ToString() {
-            $this->out .= "<td";
+            $this->out .= "<a";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
             $this->out .= ">";
             $this->out .= isset($this->opts->string) ? "{$this->opts->string}" : "";
-            $this->unspoolContainer();
-            $this->out .= "</td>";
+            $this->out .= "</a>";
             return $this->out;
         }
     }
-}

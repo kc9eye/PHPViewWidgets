@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uir",["File","Class"],[["UIRow",,[[,"uirow.php",,,0,"File:widgets/uirow.php:uirow.php"],[,"PHPViewWidgets\\Widgets\\UIRow",,"phpviewwidgets/widgets/uirow",1,"File:widgets/uirow.php:PHPViewWidgets\\Widgets\\UIRow","PHPClass:PHPViewWidgets\\Widgets\\UIRow"]]]]);

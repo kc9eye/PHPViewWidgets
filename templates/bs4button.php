@@ -69,7 +69,7 @@ namespace PHPViewWidgets\Templates {
                 $this->setCommon();
                 $this->out .= "</button>";
             }
-
+            return $this->out;
         }
 
         private function setCommon() {

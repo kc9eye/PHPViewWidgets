@@ -45,6 +45,7 @@ namespace PHPViewWidgets\Templates {
     //This widgets accepts the following options:
     //None
     class BS4Head extends UIHead {
+        public $Version = 4.5;
         public function __construct(Options $opts = null, Array $widgets = []) {
             $bs4Widgets = [
                 new UIMeta(new Options([

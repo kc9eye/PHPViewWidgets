@@ -33,6 +33,9 @@ namespace PHPViewWidgets\Templates {
 
 //class: PHPViewWidgets\Templates\GridData
     //This class represents data for a <PHPViewWidgets\Templates\DataGrid> widget.
+    //
+    //Parameters:
+    //Array $data - an optional array of indexed array's representing data rows
     class GridData implements Data {
         protected $data;
         private $pntr;
@@ -47,6 +50,14 @@ namespace PHPViewWidgets\Templates {
             }
         }
 
+        //method: AddRow
+        //Sets the given indexed array as a row of data
+        //
+        //Parmeters:
+        //Array $row - an indexed array of data representing a data row
+        //
+        //Returns:
+        //Void
         public function AddRow(Array $row) {
             if (empty($this->keys)) $this->keys = array_keys($row);
             else {
@@ -59,10 +70,23 @@ namespace PHPViewWidgets\Templates {
             array_push($this->data, $row);
         }
 
+        //method: DeleteRow
+        //Deletes the data row located at the position given
+        //
+        //Parmeters:
+        //integer $postition - a zero based integer representing the position of the row to delete
+        //
+        //Returns:
+        //Void
         public function DeleteRow($position) {
             array_splice($this->data,$position,1);
         }
 
+        //method: Headings
+        //Returns an unindexed array of data column headings
+        //
+        //Returns:
+        //Array
         public function Headings():Array {
             return $this->keys;
         }

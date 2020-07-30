@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("del",["Function"],[["DeleteRow",,[["PHPViewWidgets\\Interfaces\\Data",,,,0,"File:interfaces/data.php:PHPViewWidgets\\Interfaces\\Data.DeleteRow","PHPClass:PHPViewWidgets\\Interfaces\\Data:DeleteRow"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("hea",["Function"],[["Headings",,[["PHPViewWidgets\\Interfaces\\Data",,,,0,"File:interfaces/data.php:PHPViewWidgets\\Interfaces\\Data.Headings","PHPClass:PHPViewWidgets\\Interfaces\\Data:Headings"]]]]);

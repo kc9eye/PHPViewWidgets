@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("PHPClass:PHPViewWidgets\\Templates\\GridData","PHPViewWidgets\\Templates\\GridData");NDSummary.OnSummaryLoaded("PHPClass:PHPViewWidgets\\Templates\\GridData",[["PHP","PHP"]],[["Classes","Class"]],[[230,0,0,"PHPViewWidgets\\Templates\\GridData"]]);

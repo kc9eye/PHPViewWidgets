@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("gri",["File","Class"],[["GridData",,[[,"griddata",,,0,"File:templates/griddata.php:griddata"],[,"PHPViewWidgets\\Templates\\GridData",,"phpviewwidgets/templates/griddata",1,"File:templates/griddata.php:PHPViewWidgets\\Templates\\GridData","PHPClass:PHPViewWidgets\\Templates\\GridData"]]]]);

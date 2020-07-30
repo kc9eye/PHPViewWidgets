@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWidgets\\Templates\\BS4Col",{249:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">Represents a bootstrap 4 basic layout column. All columns in a row will be distrubuted evenly accross the row viewport.</div></div>"});

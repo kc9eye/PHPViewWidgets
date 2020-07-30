@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("PHPClass:PHPViewWidgets\\Templates\\BS4Row","PHPViewWidgets\\Templates\\BS4Row");NDSummary.OnSummaryLoaded("PHPClass:PHPViewWidgets\\Templates\\BS4Row",[["PHP","PHP"]],[["Classes","Class"]],[[254,0,0,"PHPViewWidgets\\Templates\\BS4Row"]]);

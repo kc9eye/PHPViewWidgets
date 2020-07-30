@@ -1,0 +1,1 @@
+NDContentPage.OnToolTipsLoaded({138:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">This class represents a division widget.</div></div>"});

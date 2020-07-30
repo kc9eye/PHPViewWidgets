@@ -35,6 +35,9 @@ namespace PHPViewWidgets\Templates {
     //Represents a bootstrap 4 basic layout column. All columns in a row will be distrubuted 
     //evenly accross the row viewport.
     //
+    //topic: Extends
+    //<PHPViewWidgets\Widgets\UIDiv>
+    //
     //See Also:
     //<PHPViewWidgets\Widgets\UIDiv> for available options
     class BS4Col extends UIDiv {

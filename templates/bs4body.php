@@ -34,6 +34,9 @@ namespace PHPViewWidgets\Templates {
 //class: BS4Body
     //Required if using any of the BS4 layout templates
     //
+    //topic: Extends
+    //<PHPViewWidgets\Widgets\UIContainer>
+    //
     //See Also: 
     //<PHPViewWidgets\Widgets\UIBody> for available options
     class BS4Body extends UIContainer {

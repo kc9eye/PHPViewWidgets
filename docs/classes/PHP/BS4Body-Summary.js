@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("PHPClass:BS4Body","BS4Body");NDSummary.OnSummaryLoaded("PHPClass:BS4Body",[["PHP","PHP"]],[["Classes","Class"]],[[259,0,0,"BS4Body"]]);
+NDFramePage.OnPageTitleLoaded("PHPClass:BS4Body","BS4Body");NDSummary.OnSummaryLoaded("PHPClass:BS4Body",[["PHP","PHP"]],[["Classes","Class"],["Groups","Group"],["Information","Information"]],[[254,0,0,"BS4Body"],[263,0,1,"Information","Information"],[264,0,2,"Extends","Extends"]]);

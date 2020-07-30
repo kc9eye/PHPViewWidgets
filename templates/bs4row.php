@@ -34,6 +34,9 @@ namespace PHPViewWidgets\Templates {
 //class: PHPViewWidgets\Templates\BS4Row
     //If not used within a BS4Body then a regular division is displayed with given options
     //
+    //topic: Extends
+    //<PHPViewWidgets\Widgets\UIDiv>
+    //
     //See Also:
     //<PHPViewWidgets\Widgets\UIDiv> for available options
     class BS4Row extends UIDiv {

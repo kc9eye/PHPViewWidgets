@@ -37,7 +37,7 @@ namespace PHPViewWidgets\Templates {
     //See Also: 
     //<PHPViewWidgets\Widgets\UIBody> for available options
     class BS4Body extends UIContainer {
-        public function __construct(Options $opts, Array $widgets = []) {
+        public function __construct(Options $opts = null, Array $widgets = []) {
             parent::__construct($opts,$widgets);
         }
 

@@ -116,14 +116,17 @@ namespace PHPViewWidgets\Templates {
                 if (array_key_exists('tbody',$this->sectionOpts)) {
                     $tbody = new UITbody($this->sectionOpts['tbody']);
                 }
-                if (!empty($this->columnheadings)) {
-                    if (array_key_exists('thead',$this->sectionOpts)) {
-                        $headings = new UIThead($this->sectionOpts['thead']);
-                    }
-                    else {
-                        $headings = new UIThead(new Options(['class'=>'thead-dark']));
-                    }
+                else {
+                    $tbody = new UITbody();
                 }
+    
+                if (array_key_exists('thead',$this->sectionOpts)) {
+                    $headings = new UIThead($this->sectionOpts['thead']);
+                }
+                else {
+                    $headings = new UIThead(new Options(['class'=>'thead-dark']));
+                }
+
             }
             else {
                 $div = new UIDiv(new Options(['class'=>'table-responsive']));

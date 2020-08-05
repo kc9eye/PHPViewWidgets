@@ -104,7 +104,7 @@ namespace PHPViewWidgets\Templates {
                 }
 
                 if (array_key_exists('table',$this->sectionOpts)) {
-                    $this->sectionOpts['table']->class = issset($this->sectionOpts['table']->class) ?
+                    $this->sectionOpts['table']->class = isset($this->sectionOpts['table']->class) ?
                         "table {$this->sectionOpts['table']->class}" :
                         "table";
                     $table = new UITable($this->sectionOpts['table']);

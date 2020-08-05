@@ -42,7 +42,7 @@ namespace PHPViewWidgets\Templates {
     class BS4Row extends UIDiv {
         public function __construct(Options $opts = null, Array $widgets = []) {
             if (!is_null($opts)) {
-                $opts->class = isset($opts->class) ? "row {$opts->clas}" : "row";
+                $opts->class = isset($opts->class) ? "row {$opts->class}" : "row";
             }
             else {
                 $opts = new Options(['class'=>'row']);

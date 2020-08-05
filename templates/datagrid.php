@@ -48,19 +48,23 @@ namespace PHPViewWidgets\Templates {
     //<PHPViewWidgets\Widgets\UIWidget>
     //
     //Parameters:
+    //Array $opts - an optional indexed array of the following form, containing options for the various structural elements:
+    //'['div'=>new Options(),'table'=>new Options(),'thead'=>new Options(),'tbody'=>new Options()]'
     //<PHPViewWidgets\Templates\GridData> $data - an optional GridData object containing the data for the grid
     //Array $headings - an optional unindexed array of column headings to use
     //
     //Topic: Options
     //This widget accepts the following options:
-    //None
+    //
     class DataGrid extends UIWidget {
         private $griddata;
         protected $columnheadings;
         protected $newcolumn;
+        protected $sectionOpts;
 
-        public function __construct(GridData $data = null, $headings = null) {
+        public function __construct(Array $opts = null, GridData $data = null, $headings = null) {
             parent::__construct();
+            $this->sectionOpts = is_null($opts) ? null : $opts;
             if (!is_null($data)) $this->SetData($data);
             if (!is_null($headings)) $this->SetColumnHeadings($headings);
         }
@@ -88,23 +92,56 @@ namespace PHPViewWidgets\Templates {
         }
 
         public function ToString() {
-            $div = new UIDiv(new Options(['class'=>'table-responsive']));
-            $table = new UITable(new Options(['class'=>'table']));
-            $tbody = new UITbody();
+            if (!is_null($this->sectionOpts)) {
+                if (array_key_exists('div',$this->sectionOpts)) {
+                    $this->sectionOpts['div']->class = isset($this->sectionOpts['div']->class) ? 
+                        "table-responsive {$this->sectionOpts['div']->class}" :
+                        "table-responsive";
+                    $div = new UIDiv($this->sectionOpts['div']); 
+                }
+                else {
+                    $div = new UIDiv(new Options(['class'=>"table-responsive"]));
+                }
 
-            if (!empty($this->columnheadings)) {
-                $headings = new UIThead(new Options(['class'=>'thead-dark']));
-                foreach($this->columnheadings as $head) {
-                    $headings->Add(new UITh(new Options(['other'=>"scope='col'",'string'=>$head])));
+                if (array_key_exists('table',$this->sectionOpts)) {
+                    $this->sectionOpts['table']->class = issset($this->sectionOpts['table']->class) ?
+                        "table {$this->sectionOpts['table']->class}" :
+                        "table";
+                    $table = new UITable($this->sectionOpts['table']);
                 }
-                $table->Add($headings);
+                else {
+                    $table = new UITable(new Options(['class'=>"table"]));
+                }
+
+                if (array_key_exists('tbody',$this->sectionOpts)) {
+                    $tbody = new UITbody($this->sectionOpts['tbody']);
+                }
+                if (!empty($this->columnheadings)) {
+                    if (array_key_exists('thead',$this->sectionOpts)) {
+                        $headings = new UIThead($this->sectionOpts['thead']);
+                    }
+                    else {
+                        $headings = new UIThead(new Options(['class'=>'thead-dark']));
+                    }
+                }
             }
-            elseif (!empty($this->griddata->Headings())) {
+            else {
+                $div = new UIDiv(new Options(['class'=>'table-responsive']));
+                $table = new UITable(new Options(['class'=>'table']));
                 $headings = new UIThead(new Options(['class'=>'thead-dark']));
-                foreach($this->griddata->Headings() as $head) {
-                    $headings->Add(new UITh(new Options(['other'=>"scope='col'",'string'=>$head])));
+                $tbody = new UITbody();
+                if (!empty($this->columnheadings)) {                    
+                    foreach($this->columnheadings as $head) {
+                        $headings->Add(new UITh(new Options(['other'=>"scope='col'",'string'=>$head])));
+                    }
+                    $table->Add($headings);
                 }
-                $table->Add($headings);
+                elseif (!empty($this->griddata->Headings())) {
+                    foreach($this->griddata->Headings() as $head) {
+                        $headings->Add(new UITh(new Options(['other'=>"scope='col'",'string'=>$head])));
+                    }
+                    $table->Add($headings);
+                }
             }
             foreach($this->griddata as $row) {
                 $tr = new UITr();

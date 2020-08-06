@@ -24,7 +24,7 @@
 //with this program; if not, write to the Free Software Foundation, Inc.
 //
 //51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-require_once(dirname(__FILE__)."/PHPViewWidgets/autoloader.php");
+require_once(dirname(__FILE__)."/autoloader.php");
 use PHPViewWidgets\Widgets\Options;
 use PHPViewWidgets\Widgets\UIBody;
 use PHPViewWidgets\Widgets\UIHead;

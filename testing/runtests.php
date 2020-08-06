@@ -25,18 +25,23 @@
 //
 //51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 require_once(dirname(dirname(__FILE__))."/autoloader.php");
-use PHPViewWidgets\Widgets\Options;
-use PHPViewWidgets\Widgets\UIBody;
-use PHPViewWidgets\Widgets\UIHead;
-use PHPViewWidgets\Widgets\UIHeading;
-use PHPViewWidgets\Widgets\UIHtml;
-use PHPViewWidgets\Widgets\UITitle;
+// use PHPViewWidgets\Widgets\Options;
+// use PHPViewWidgets\Widgets\UIBody;
+// use PHPViewWidgets\Widgets\UIHead;
+// use PHPViewWidgets\Widgets\UIHeading;
+// use PHPViewWidgets\Widgets\UIHtml;
+// use PHPViewWidgets\Widgets\UITitle;
 
-$html = new UIHtml();
-$head = new UIHead();
-$head->Add(new UITitle(new Options(['title'=>"Docker Yeah!"])));
-$body = new UIBody();
-$body->Add(new UIHeading(new Options(['heading'=>"Widgets Working"])));
-$html->Add($head);
-$html->Add($body);
-$html->Display();
+// $html = new UIHtml();
+// $head = new UIHead();
+// $head->Add(new UITitle(new Options(['title'=>"Docker Yeah!"])));
+// $body = new UIBody();
+// $body->Add(new UIHeading(new Options(['heading'=>"Widgets Working"])));
+// $html->Add($head);
+// $html->Add($body);
+// $html->Display();
+echo "<pre>";
+get_include_path();
+echo "--";
+spl_autoload_extensions();
+echo "</pre>";

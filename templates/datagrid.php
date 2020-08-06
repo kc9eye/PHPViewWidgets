@@ -94,9 +94,10 @@ namespace PHPViewWidgets\Templates {
         public function ToString() {
             if (!is_null($this->sectionOpts)) {
                 if (array_key_exists('div',$this->sectionOpts)) {
-                    $this->sectionOpts['div']->class = isset($this->sectionOpts['div']->class) ? 
-                        "table-responsive {$this->sectionOpts['div']->class}" :
-                        "table-responsive";
+                    if ($this->sectionOpts['div']->class )
+                    // $this->sectionOpts['div']->class = isset($this->sectionOpts['div']->class) ? 
+                    //     "table-responsive {$this->sectionOpts['div']->class}" :
+                    //     "table-responsive";
                     $div = new UIDiv($this->sectionOpts['div']); 
                 }
                 else {
@@ -111,7 +112,7 @@ namespace PHPViewWidgets\Templates {
                 }
                 else {
                     $table = new UITable(new Options(['class'=>"table"]));
-                }
+            }
 
                 if (array_key_exists('tbody',$this->sectionOpts)) {
                     $tbody = new UITbody($this->sectionOpts['tbody']);

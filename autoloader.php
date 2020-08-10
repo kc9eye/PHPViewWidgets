@@ -13,35 +13,8 @@
 * The above copyright notice and this permission notice shall be included in all
 * copies or substantial portions of the Software.
 */
-Class Autoloader {
-    
-    private $dir;
-    private $extns;
 
-    public function __construct ($initial_path, $class_ext = []) {
-        $this->SetIncludePath($initial_path);
-        $this->SetLoadableExtensions($class_ext);
-        spl_autoload_register([$this,'load']);
-    }
+spl_autoload_register(function($obj){
+    $here = diranme(dirname(__FILE__));
 
-
-    private function load ($obj) {
-        spl_autoload(strtolower($obj));
-    }
-
-    private function SetIncludePath ($base) {
-        foreach(new DirectoryIterator($base) as $fileinfo) {
-            if (!$fileinfo->isDot() && $fileinfo->isDir() && $fileinfo->getFilename() != '.git') {
-                set_include_path(get_include_path().PATH_SEPARATOR.$fileinfo->getPathname());
-                $this->SetIncludePath($fileinfo->getPathname());
-            }
-        }
-    }
-
-    private function SetLoadableExtensions ($exts) {
-        foreach($exts as $ext) {
-            spl_autoload_extensions(spl_autoload_extensions().','.$ext);
-        }
-    }
-}
-new Autoloader(dirname(__DIR__),['.php','.int.php','.obj.php','.class.php']);
+});

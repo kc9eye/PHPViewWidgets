@@ -15,6 +15,6 @@
 */
 
 spl_autoload_register(function($obj){
-    $here = diranme(dirname(__FILE__));
-
+    
 });
+echo dirname(dirname(__FILE__));

@@ -25,4 +25,4 @@
 //
 //51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-require_once("autoloader.php");
+require_once(dirname(diranme(__FILE__))."/autoloader.php");

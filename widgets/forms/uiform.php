@@ -38,8 +38,8 @@ namespace PHPViewWidgets\Widgets\Forms {
     //<PHPViewWidgets\Widgets\UIContainer>
     //
     //About: Options
-    //
     //This widget accepts the following options:
+    //
     //action - optional action url
     //method - an optional method attribute, one of post, or get
     //enctype - optional enctype, one of text/plain, multipart/form-data, application/x-www-form-encoded

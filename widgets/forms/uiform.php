@@ -28,7 +28,8 @@
 //namespace: PHPViewWidgets\Widgets\Forms
 namespace PHPViewWidgets\Widgets\Forms {
 
-use PHPViewWidgets\Widgets\UIContainer;
+    use PHPViewWidgets\Widgets\Options;
+    use PHPViewWidgets\Widgets\UIContainer;
 
 //class: PHPViewWidgets\Widgets\Forms\UIForm
     //Represents a form widget

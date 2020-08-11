@@ -55,6 +55,7 @@ namespace PHPViewWidgets\Widgets\Forms {
         public function ToString() {
             $this->out .= "<form";
             $this->out .= isset($this->opts->action) ? " action='{$this->opts->action}'" : "";
+            $this->out .= isset($this->opts->method) ? " method='{$this->opts->method}'" : "";
             $this->out .= isset($this->opts->enctype) ? " enctype='{$this->opts->enctype}'" : "";
             $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";

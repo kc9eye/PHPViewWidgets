@@ -65,8 +65,8 @@ namespace PHPViewWidgets\Templates {
                     'other'=>"integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'"
                 ])),
                 new UIScript(new Options([
-                    'src'=>"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
-                    'other'=>"integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'"
+                    'src'=>"https://unpkg.com/@popperjs/core@2"
+                    
                 ])),
                 new UIScript(new Options([
                     'src'=>"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js",

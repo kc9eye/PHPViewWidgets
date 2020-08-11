@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWidgets\\Widgets\\Forms",{62:"<div class=\"NDToolTip TClass LPHP\"><div class=\"NDClassPrototype\" id=\"NDClassPrototype62\"><div class=\"CPEntry TClass Current\"><div class=\"CPModifiers\"><span class=\"SHKeyword\">namespace</span> </div><div class=\"CPName\">PHPViewWidgets\\Widgets\\Forms</div></div></div></div>"});

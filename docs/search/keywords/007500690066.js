@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("uif",["File","Class"],[["UIForm",,[[,"uiform.php",,,0,"File:widgets/forms/uiform.php:uiform.php"],[,"PHPViewWidgets\\Widgets\\Forms\\UIForm",,"phpviewwidgets/widgets/forms/uiform",1,"File:widgets/forms/uiform.php:PHPViewWidgets\\Widgets\\Forms\\UIForm","PHPClass:PHPViewWidgets\\Widgets\\Forms\\UIForm"]]]]);

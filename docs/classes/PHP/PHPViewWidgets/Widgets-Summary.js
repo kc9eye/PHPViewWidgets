@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("PHPClass:PHPViewWidgets\\Widgets","PHPViewWidgets\\Widgets");NDSummary.OnSummaryLoaded("PHPClass:PHPViewWidgets\\Widgets",[["PHP","PHP"]],[["Classes","Class"]],[[4,0,0,"PHPViewWidgets\\Widgets"]]);
+NDFramePage.OnPageTitleLoaded("PHPClass:PHPViewWidgets\\Widgets","PHPViewWidgets\\Widgets");NDSummary.OnSummaryLoaded("PHPClass:PHPViewWidgets\\Widgets",[["PHP","PHP"]],[["Classes","Class"]],[[256,0,0,"PHPViewWidgets\\Widgets"]]);

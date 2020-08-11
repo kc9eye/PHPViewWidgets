@@ -15,6 +15,6 @@
 */
 
 spl_autoload_register(function($obj){
-    
+    set_include_path(get_include_path().";".dirname(dirname(__FILE__)));
+    spl_autoload(strtolower($obj));
 });
-echo dirname(dirname(__FILE__));

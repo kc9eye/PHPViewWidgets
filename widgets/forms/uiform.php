@@ -34,10 +34,10 @@ namespace PHPViewWidgets\Widgets\Forms {
 //class: PHPViewWidgets\Widgets\Forms\UIForm
     //Represents a form widget
     //
-    //About: Extends
+    //topic: Extends
     //<PHPViewWidgets\Widgets\UIContainer>
     //
-    //About: Options
+    //topic: Options
     //This widget accepts the following options:
     //
     //action - optional action url

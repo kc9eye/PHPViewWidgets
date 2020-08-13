@@ -40,9 +40,10 @@ namespace PHPViewWidgets\Widgets\Forms {
     //topic: Options
     //This widget accepts the following options:
     //
+    //option - the displayed option
     //value - an optional value attribute
     //id - an optional id attribute
-    //option - the displayed option
+    //selected - an optional index, indicating the option is selected when displayed
     //other - an optional attribute to add verbatium
     class UIOption extends UIWidget {
         public function __construct(Options $opts = null) {
@@ -54,6 +55,7 @@ namespace PHPViewWidgets\Widgets\Forms {
             $this->out .= isset($this->opts->value) ? " value='{$this->opts->value}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
+            $this->out .= isset($this->opts->selected) ? " selected" : "";
             $this->out .= ">";
             $this->out .= isset($this->opts->option) ? "{$this->opts->option}" : "";
             $this->out .= "</option>";

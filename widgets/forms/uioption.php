@@ -1,5 +1,5 @@
 <?php
-//File: uiinput.php
+//File: uioption.php
 //
 //About: License
 //
@@ -28,46 +28,35 @@
 //namespace: PHPViewWidgets\Widgets\Forms
 namespace PHPViewWidgets\Widgets\Forms {
 
-use PHPViewWidgets\Widgets\Options;
-use PHPViewWidgets\Widgets\UIWidget;
+    use PHPViewWidgets\Widgets\Options;
+    use PHPViewWidgets\Widgets\UIWidget;
 
-    //class: PHPViewWidgets\Widgets\Forms\UIInput
-    //Represents a form input object
+//class: PHPViewWidgets\Widgets\Forms\UIOption
+    //Represents an option form object
     //
     //topic: Extends
     //<PHPViewWidgets\Widgets\UIWidget>
     //
     //topic: Options
-    //This widget accepts the follwoing options:
+    //This widget accepts the following options:
     //
-    //type - the input type (default: text)
-    //name - the input name (default: userinput)
-    //class - an optional class attribute
-    //style - an optional style attribute
+    //value - an optional value attribute
     //id - an optional id attribute
-    //size - an optional size
-    //value - an optional value
-    //placeholder - an optional placeholder
-    //form - an optional form id
+    //option - the displayed option
     //other - an optional attribute to add verbatium
-    class UIInput extends UIWidget {
+    class UIOption extends UIWidget {
         public function __construct(Options $opts = null) {
             parent::__construct($opts);
         }
 
         public function ToString() {
-            $this->out .= "<input";
-            $this->out .= isset($this->opts->type) ? " type='{$this->opts->type}'" : " type='text'";
-            $this->out .= isset($this->opts->name) ? " name='{$this->opts->name}'" : " name='userinput'";
-            $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
-            $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";
-            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
-            $this->out .= isset($this->opts->size) ? " size='{$this->opts->size}'" : "";
+            $this->out .= "<option";
             $this->out .= isset($this->opts->value) ? " value='{$this->opts->value}'" : "";
-            $this->out .= isset($this->opts->placeholder) ? " placeholder='{$this->opts->placeholder}'" : "";
-            $this->out .= isset($this->opts->form) ? " form='{$this->opts->form}'" : "";
+            $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->other) ? " {$this->opts->other}" : "";
-            $this->out .= " />";
+            $this->out .= ">";
+            $this->out .= isset($this->opts->option) ? "{$this->opts->option}" : "";
+            $this->out .= "</option>";
             return $this->out;
         }
     }

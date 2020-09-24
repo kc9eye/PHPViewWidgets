@@ -31,7 +31,7 @@ namespace PHPViewWidgets\Templates {
     use PHPViewWidgets\Widgets\Options;
     use PHPViewWidgets\Widgets\UIContainer;
 
-//class: BS4Body
+//class: PHPViewWidgets\Templates\BS4Body
     //Required if using any of the BS4 layout templates
     //
     //topic: Extends

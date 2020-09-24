@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWidgets\\Templates\\BS4Body",{57:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">Required if using any of the BS4 layout templates</div></div>",59:"<div class=\"NDToolTip TInformation LPHP\"><div class=\"TTSummary\">PHPViewWidgets\\Widgets\\UIContainer</div></div>"});

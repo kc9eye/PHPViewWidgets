@@ -50,6 +50,7 @@ namespace PHPViewWidgets\Widgets {
 
         public function ToString() {
             $this->out .= "<a";
+            $this->out .= isset($this->opts->href) ? " href='{$this->opts->href}'" : "";
             $this->out .= isset($this->opts->id) ? " id='{$this->opts->id}'" : "";
             $this->out .= isset($this->opts->class) ? " class='{$this->opts->class}'" : "";
             $this->out .= isset($this->opts->style) ? " style='{$this->opts->style}'" : "";

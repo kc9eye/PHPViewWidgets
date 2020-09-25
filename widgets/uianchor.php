@@ -60,3 +60,4 @@ namespace PHPViewWidgets\Widgets {
             return $this->out;
         }
     }
+}

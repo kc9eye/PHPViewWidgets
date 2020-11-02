@@ -46,7 +46,7 @@ namespace PHPViewWidgets\Widgets\Forms {
     //multiple - an optional boolean, if true then the attribut 'multiple' is added
     //other - an optional item to add verbatium as option
     class UISelect extends UIContainer {
-        public function __construct(Options $opts = null, Array $widgets) {
+        public function __construct(Options $opts = null, Array $widgets = []) {
             parent::__construct($opts,$widgets);
         }
 

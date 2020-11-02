@@ -31,6 +31,21 @@ namespace PHPViewWidgets\Widgets\Forms
     use PHPViewWidgets\Widgets\Options;
     use PHPViewWidgets\Widgets\UIWidget;
 
+    //class: PHPViewWidgets\Widgets\Forms\UILabel
+    //Represents a form input object
+    //
+    //topic: Extends
+    //<PHPViewWidgets\Widgets\UIWidget>
+    //
+    //topic: Options
+    //This widget accepts the follwoing options:
+    //
+    //for - the input type (default: text)
+    //class - an optional class attribute
+    //style - an optional style attribute
+    //id - an optional id attribute
+     //other - an optional attribute to add verbatium
+
     class UILabel extends UIWidget
     {
         public function __construct(Options $opts = null)

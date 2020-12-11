@@ -40,6 +40,7 @@ namespace PHPViewWidgets\Widgets\Forms
     //topic: Options
     //This widget accepts the follwoing options:
     //
+    //label - the label output
     //for - the input type (default: text)
     //class - an optional class attribute
     //style - an optional style attribute

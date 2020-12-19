@@ -1,3 +1,4 @@
 @echo off
 REM Updates documentation
-"C:\Users\chica\Documents\Bin\Natural Docs\NaturalDocs.exe" .
+set "ND_BIN=D:\bin\Natural Docs"
+"%ND_BIN%\NaturalDocs.exe" .

@@ -61,8 +61,6 @@ Source Folder: ..\..
 # Source Filtering
 # ------------------------------------------------------------------------
 
-Ignore Source Folder: ..\..\.vscode
-
 Ignore Source Folder: ..
 
 

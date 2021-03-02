@@ -65,6 +65,13 @@ use PHPViewWidgets\Interfaces\Widget;
             $this->opts = $opts;
         }
 
+        //method:GetOptions
+        //Returns the Options object associated with this widget
+        public function GetOptions()
+        {
+            return $this->opts;
+        }
+
         //method: Display
         //Simply echo's the return of <ToString> to the output buffer
         public function Display() {

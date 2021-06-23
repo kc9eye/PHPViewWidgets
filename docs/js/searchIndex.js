@@ -801,25 +801,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/kc9eye-PHPViewWidgets-Widgets-UIWidget.html#property_opts"
         },                {
-            "fqsen": "\\PHPViewWidgets\\Interfaces\\Widget",
+            "fqsen": "\\kc9eye\\PHPViewWidgets\\Interfaces\\Widget",
             "name": "Widget",
             "summary": "The\u0020base\u0020Widget\u0020interface",
-            "url": "classes/PHPViewWidgets-Interfaces-Widget.html"
+            "url": "classes/kc9eye-PHPViewWidgets-Interfaces-Widget.html"
         },                {
-            "fqsen": "\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003ASetOptions\u0028\u0029",
+            "fqsen": "\\kc9eye\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003ASetOptions\u0028\u0029",
             "name": "SetOptions",
             "summary": "Sets\u0020the\u0020options\u0020for\u0020the\u0020widget\u0020through\u0020a\u0020kc9eye\\PHPViewWidgets\\Widgets\\Options\u0020class",
-            "url": "classes/PHPViewWidgets-Interfaces-Widget.html#method_SetOptions"
+            "url": "classes/kc9eye-PHPViewWidgets-Interfaces-Widget.html#method_SetOptions"
         },                {
-            "fqsen": "\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003AToString\u0028\u0029",
+            "fqsen": "\\kc9eye\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003AToString\u0028\u0029",
             "name": "ToString",
             "summary": "Returns\u0020the\u0020widget\u0020as\u0020a\u0020string",
-            "url": "classes/PHPViewWidgets-Interfaces-Widget.html#method_ToString"
+            "url": "classes/kc9eye-PHPViewWidgets-Interfaces-Widget.html#method_ToString"
         },                {
-            "fqsen": "\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003ADisplay\u0028\u0029",
+            "fqsen": "\\kc9eye\\PHPViewWidgets\\Interfaces\\Widget\u003A\u003ADisplay\u0028\u0029",
             "name": "Display",
             "summary": "Echos\u0020the\u0020widget\u0020to\u0020the\u0020output\u0020buffer",
-            "url": "classes/PHPViewWidgets-Interfaces-Widget.html#method_Display"
+            "url": "classes/kc9eye-PHPViewWidgets-Interfaces-Widget.html#method_Display"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -855,15 +855,5 @@ Search.appendIndex(
             "name": "Forms",
             "summary": "",
             "url": "namespaces/kc9eye-phpviewwidgets-widgets-forms.html"
-        },                {
-            "fqsen": "\\PHPViewWidgets\\Interfaces",
-            "name": "Interfaces",
-            "summary": "",
-            "url": "namespaces/phpviewwidgets-interfaces.html"
-        },                {
-            "fqsen": "\\PHPViewWidgets",
-            "name": "PHPViewWidgets",
-            "summary": "",
-            "url": "namespaces/phpviewwidgets.html"
         }            ]
 );

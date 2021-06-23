@@ -18,7 +18,7 @@
 /**
  * kc9eye\PHPViewWidgets\Interfaces
  */
-namespace PHPViewWidgets\Interfaces {
+namespace kc9eye\PHPViewWidgets\Interfaces {
     /**
      * The base Widget interface
      */

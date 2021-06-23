@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uip",["File","Class"],[["UIPara",,[[,"uipara.php",,,0,"File:widgets/uipara.php:uipara.php"],[,"PHPViewWidgets\\Widgets\\UIPara",,"phpviewwidgets/widgets/uipara",1,"File:widgets/uipara.php:PHPViewWidgets\\Widgets\\UIPara","PHPClass:PHPViewWidgets\\Widgets\\UIPara"]]]]);

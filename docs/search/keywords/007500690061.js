@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uia",["File","Class"],[["UIAnchor",,[[,"uianchor.php",,,0,"File:widgets/uianchor.php:uianchor.php"],[,"PHPViewWidgets\\Widgets\\UIAnchor",,"phpviewwidgets/widgets/uianchor",1,"File:widgets/uianchor.php:PHPViewWidgets\\Widgets\\UIAnchor","PHPClass:PHPViewWidgets\\Widgets\\UIAnchor"]]]]);

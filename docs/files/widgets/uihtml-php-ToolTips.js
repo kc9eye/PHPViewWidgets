@@ -1,1 +1,0 @@
-NDContentPage.OnToolTipsLoaded({270:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">This class is the parent for all widget containers.&nbsp; A widget container is a widget which also contains other widgets</div></div>"});

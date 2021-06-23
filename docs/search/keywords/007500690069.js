@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uii",["File","Class"],[["UIInput",,[[,"uiinput.php",,,0,"File:widgets/forms/uiinput.php:uiinput.php"],[,"PHPViewWidgets\\Widgets\\Forms\\UIInput",,"phpviewwidgets/widgets/forms/uiinput",1,"File:widgets/forms/uiinput.php:PHPViewWidgets\\Widgets\\Forms\\UIInput","PHPClass:PHPViewWidgets\\Widgets\\Forms\\UIInput"]]]]);

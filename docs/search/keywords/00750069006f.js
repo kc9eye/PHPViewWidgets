@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uio",["File","Class"],[["UIOption",,[[,"uioption.php",,,0,"File:widgets/forms/uioption.php:uioption.php"],[,"PHPViewWidgets\\Widgets\\Forms\\UIOption",,"phpviewwidgets/widgets/forms/uioption",1,"File:widgets/forms/uioption.php:PHPViewWidgets\\Widgets\\Forms\\UIOption","PHPClass:PHPViewWidgets\\Widgets\\Forms\\UIOption"]]]]);

@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("uic",["File","Class"],[["UIContainer",,[[,"uicontainer.php",,,0,"File:widgets/uicontainer.php:uicontainer.php"],[,"PHPViewWidgets\\Widgets\\UIContainer",,"phpviewwidgets/widgets/uicontainer",1,"File:widgets/uicontainer.php:PHPViewWidgets\\Widgets\\UIContainer","PHPClass:PHPViewWidgets\\Widgets\\UIContainer"]]]]);

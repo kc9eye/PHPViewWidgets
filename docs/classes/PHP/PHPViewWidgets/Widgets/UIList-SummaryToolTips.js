@@ -1,1 +1,0 @@
-NDSummary.OnToolTipsLoaded("PHPClass:PHPViewWidgets\\Widgets\\UIList",{208:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">This class represents an orderd or unorder list</div></div>",210:"<div class=\"NDToolTip TInformation LPHP\"><div class=\"TTSummary\">PHPViewWidgets\\Widgets\\UIContainer</div></div>"});

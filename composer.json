@@ -1,0 +1,12 @@
+{
+    "name":"kc9eye/phpviewwidgets",
+    "autoload": {
+        "psr-4": {
+            "kc9eye\\PHPViewWidgets\\":"src/",
+            "kc9eye\\PHPViewWidgets\\Interfaces\\":"src/",
+            "kc9eye\\PHPViewWidgets\\Templates\\":"src/",
+            "kc9eye\\PHPViewWidgets\\Widgets\\":"src/",
+            "kc9eye\\PHPViewWidgets\\Widgets\\Forms\\":"src/"
+        }
+    }
+}

@@ -1,1 +1,0 @@
-NDContentPage.OnToolTipsLoaded({14:"<div class=\"NDToolTip TClass LPHP\"><div class=\"TTSummary\">This class represents a data grid widget formated with bootstrap4. If not using the PHPViewWidgets\\Templates\\BS4head the grid will be displayed as a standard table.</div></div>"});
